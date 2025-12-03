@@ -1,10 +1,11 @@
- Great Readings
+# Great Readings
 his document consists of great books or articles on Clinical Psychology.
 ome are here because there is a course covering the same material;
 ome are just great books that you should read at some point in your career.
 nce you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
 r, if you are struggling in one of the courses, perhaps reading a book on the subject will help.
-elow is the **Extras** document for the Clinical Psychology OSSU-style curriculum.
+
+
 | Name | Author(s) |
  :----------------------------------------------------------- | :-------------------: |
 | _Clinical Handbook of Psychological Disorders_ | David H. Barlow (ed.) |
@@ -21,7 +22,9 @@ elow is the **Extras** document for the Clinical Psychology OSSU-style curriculu
 | _Theories of Personality_ | Feist & Feist |
 | _Handbook of Evidence-Based Practice in Clinical Psychology_ | Norcross & VandenBos |
 | _The Science of Personality_ | Pervin & John |
+
 Open / free resources)
+
 | Name | Author(s) |
  :----------------------------------------------------------------------------------------------- | :--------------: |
 | [NOBA Psychology Textbook](https://nobaproject.com/textbooks) | Multiple authors |
