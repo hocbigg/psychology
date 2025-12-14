@@ -58,7 +58,7 @@ or that there was an alternative that fit better into the curriculum.
 | [Human Emotion (UC Berkeley – YouTube)](https://www.youtube.com/playlist?list=PLF2D205BD88BB1916) | — | — |
  [Cognitive Neuroscience (MIT OCW 9.18)](https://ocw.mit.edu/courses/9-18a-b-cognitive-neuroscience-fall-2002/) | self-paced | 6–10 h/wk |
 
-## Online Learning - Great Courses
+### Online Learning - Great Courses
 
 | Courses | Duration | Effort |
 | :-- | :--: | :--: |
