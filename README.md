@@ -58,123 +58,97 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [APA Online Communities](https://www.apa.org/members/communities)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/psychology/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
-
 # Curriculum
 
-- [Intro](#intro)
-- [Core](#core)
-    - [Mind, Brain, Behavior](#mind-brain-behavior)
-    - [Cognition, Memory, Thought](#cognition-memory-thought)
-    - [Development, Personality, Social Mind](#development-personality-social-mind)
-    - [Mental Health, Measurement, Applied Domains](#mental-health-measurement-applied-domains)
-- [Advanced](#advanced)
-    - [Cognitive & Brain Sciences](#cognitive--brain-sciences)
-    - [Clinical & Counseling Foundations](#clinical--counseling-foundations)
-    - [Social, Cultural & Organizational Psychology](#social-cultural--organizational-psychology)
-    - [Developmental & Educational Psychology](#developmental--educational-psychology)
+- [Intro Psychology](#intro-psychology)
+- [Core Psychology](#core-psychology)
+    - [Phase I](#phase-i)
+    - [Phase II](#phase-ii)
+- [Advanced Psychology](#advanced-psychology)
+    - [Clinical Psychology](#clinical-psychology)
+    - [Cognitive Neuroscience](#cognitive-neuroscience)
+    - [Social/Organizational Psychology](#socialorganizational-psychology)
 - [Final Project](#final-project)
 
-## Intro
+## Intro Psychology
 
-| Subject | Why study? | Book | Videos |
+This phase orients learners to the field, covering broad fundamentals and basic scientific principles. No prerequisites. Focus on building curiosity and basic terminology.
+
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| History & Schools of Thought / What is Psychology? | To understand how modern psychology emerged, the major traditions, and how framing affects interpretation. |  | [Introduction to Psychology (MIT OpenCourseWare)](https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/) |
-| Foundations of Scientific Inquiry / Research Methods | To gain the conceptual tools for evaluating evidence, studies, and claims about mind and behavior. | [*Psychology 2e* (OpenStax)](https://openstax.org/details/books/psychology-2e) | Covered in Introduction to Psychology (MIT OpenCourseWare) |
-| Statistics Primer (for Psychology) | Because statistical reasoning underpins experiments, data analysis, and critical evaluation in psychology. | [*OpenIntro Statistics*](https://www.openintro.org/book/os/) |  |
-| Biological Basics for Psych | To ground psychological phenomena in biology: brain, neurons, physiology — essential for biopsychology and neuroscience-informed psychology. | [*Biological Psychology* by Michael J. Hove & Steven A. Martinez](https://rotel.pressbooks.pub/biologicalpsychology/) | Covered in Introduction to Psychology (MIT OpenCourseWare) |
+| Introduction to Psychology | Provides an overview of major perspectives, historical context, and subfields, fostering a holistic understanding of human behavior and mental processes. | [*Psychology*](https://www.amazon.com/Psychology-10th-David-G-Myers/dp/1429261781) | [Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) |
+| History and Systems of Psychology | Explores the evolution of psychological thought, helping contextualize modern theories and ethical considerations in the discipline. | [*A History of Psychology*](https://www.amazon.com/History-Psychology-John-G-Benjafield/dp/0199007926) | Covered in [Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) |
 
-## Core
+## Core Psychology
 
-### Mind, Brain, Behavior
+### Phase I
 
-| Subject | Why study? | Book | Videos |
+Builds foundational scientific tools and biological underpinnings. Prerequisite: Completion of "Intro Psychology".
+
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| Research Methods in Psychology | To learn how psychologists design studies, collect data, and draw valid conclusions. | [*Research Methods in Psychology* (Jhangiani et al., 4th ed.)](https://kpu.pressbooks.pub/psychmethods4e/) | Covered in Introduction to Psychology (MIT OpenCourseWare) |
-| Biopsychology / Behavioral Neuroscience | To understand how neural and physiological systems underlie behavior — bridging mind and body. | [*Biological Psychology* by Hove & Martinez](https://rotel.pressbooks.pub/biologicalpsychology/) | Covered in Introduction to Psychology (MIT OpenCourseWare) |
-| Learning & Conditioning | Because learning mechanisms are foundational to behavior change, habits, memory, and developmental psychology. | *Psychology 2e* | Covered in Introduction to Psychology (MIT OpenCourseWare) |
-| Sensation & Perception | To understand how minds interpret sensory input — essential before studying cognition. | *Psychology 2e* | Covered in Introduction to Psychology (MIT OpenCourseWare) |
+| Statistics for Psychology | Equips learners with quantitative skills to analyze data, essential for interpreting research and drawing evidence-based conclusions. | [*Statistics for the Behavioral Sciences*](https://www.ndl.ethernet.edu.et/bitstream/123456789/29095/1/Frederick%20J%20Gravetter_2017.pdf) | [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) |
+| Biological Psychology | Examines the neural and physiological bases of behavior, bridging biology and psychology for understanding brain-behavior relationships. | [*Biological Psychology*](https://godsonug.wordpress.com/wp-content/uploads/2016/09/james-w-kalat-biological-psychology-ninth-edition-wadsworth-publishing-20062-compressed.pdf) | [Human Behavioral Biology](https://www.youtube.com/playlist?list=PL848F2368C90DDC3D) |
 
-### Cognition, Memory, Thought
+### Phase II
 
-| Subject | Why study? | Book | Videos |
+Deepens understanding of key psychological domains and research practices. Prerequisites: Core Psychology: Phase I (Statistics for Research Methods; Biological Psychology for Cognitive/Developmental).
+
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| Cognitive Psychology | To grasp how mental processes like attention, perception, reasoning, language, decision-making operate. | *Psychology 2e* | [Introduction to Cognitive Psychology and Neuropsychology (University of Cambridge)](https://www.coursera.org/learn/introduction-to-cognitive-psychology-and-neuropsychology) |
-| Memory Systems | Because memory is central to cognition, identity, learning; memory research underpins many applied domains. | *Psychology 2e* | Covered in Introduction to Psychology (MIT OpenCourseWare) |
-| Cognitive Neuroscience (bridging biology + cognition) | To integrate brain-based mechanisms with cognitive functions — crucial for realistic models of mind. | [*Biological Psychology* by Hove & Martinez](https://rotel.pressbooks.pub/biologicalpsychology/) | Covered in Introduction to Cognitive Psychology and Neuropsychology (University of Cambridge) |
-| Language & Thought / Psycholinguistics | To explore how language, thought, and cognition intersect — important for any psychological or cognitive science path. | *Psychology 2e* |  |
+| Research Methods in Psychology | Teaches design, execution, and ethics of experiments and studies, enabling critical evaluation of psychological evidence. | [*Research Methods in Psychology*](https://steladhima.files.wordpress.com/2014/03/john-j-shaughnessy-eugene-b-zechmeister-jeanne-s-zechmeister-research-methods-in-psychology-2012.pdf) | [Introduction to Psychological Research Methods](https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-psychological-research-methods) |
+| Cognitive Psychology | Investigates mental processes like perception, memory, and problem-solving, foundational for understanding human cognition. | [*Cognitive Psychology*](https://cs.um.ac.ir/images/87/books/Cognitive%20Psychology_Strenberg%206th%20.pdf) | Covered in [Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) |
+| Developmental Psychology | Traces psychological changes across the lifespan, informing applications in education, parenting, and aging. | [*Lifespan Development*](https://www.amazon.com/Lifespan-Development-7th-Denise-Boyd/dp/0133805662) | Covered in [Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) |
+| Social Psychology | Analyzes how individuals influence and are influenced by others, crucial for understanding group dynamics and societal behaviors. | [*Social Psychology*](https://www.amazon.com/Social-Psychology-10th-Elliot-Aronson/dp/0134641280) | [Social Psychology](https://www.coursera.org/learn/social-psychology) |
+| Personality Psychology | Explores theories of individual differences and traits, aiding in self-awareness and applications in therapy or assessment. | [*Theories of Personality*](https://www.amazon.com/Theories-Personality-Jess-Feist/dp/0077861922) | [Personality Psychology](https://www.youtube.com/playlist?list=PLGg5obNb6tEv-0QymemzLqZjnToWn_0l4) |
+| Abnormal Psychology | Covers mental disorders, their causes, and classifications, providing a basis for empathy and clinical awareness. | [*Abnormal Psychology*](https://sargnaturecure.com/wp-content/uploads/2020/10/comer-abnormal-psychology-8th-txtbk.pdf) | Covered in [Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) |
 
-### Development, Personality, Social Mind
+## Advanced Psychology
 
-| Subject | Why study? | Book | Videos |
+Offers elective depth through specialization tracks. Learners choose one primary track (e.g., Clinical) but may sample from others. Prerequisites: All Core Phases (Research Methods for all; specific cores like Biological for Neuroscience track).
+
+Tracks are defined as follows:
+
+- **Clinical Psychology**: Focuses on mental health intervention, assessment, and therapy; ideal for those interested in counseling or psychopathology.
+- **Cognitive Neuroscience**: Emphasizes brain science and advanced cognition; suits interests in research or tech applications like AI-human interaction.
+- **Social/Organizational Psychology**: Targets group and workplace behaviors; applicable to business, policy, or community roles.
+
+### Clinical Psychology
+
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| Developmental Psychology | To understand how humans change cognitively, emotionally, socially across lifespan — essential for any applied or theoretical path. | *Psychology 2e* | [Introduction to Developmental Psychology (University of Queensland)](https://www.edx.org/learn/human-psychology/the-university-of-queensland-introduction-to-developmental-psychology) |
-| Personality Psychology | To understand individual differences, traits, dispositions, how personality shapes behavior across contexts. | *Psychology 2e* | [Personality and its Transformations (Jordan Peterson Lecture Series)](https://www.youtube.com/playlist?list=PL22J3VaeABQBlN8DUor7SKWCwSghcqlY5) |
-| Social Psychology | To learn how individuals think, influence, and behave in social contexts: group behavior, prejudice, conformity, social cognition. | *Psychology 2e* | [Social Psychology (Wesleyan University)](https://www.coursera.org/learn/social-psychology) |
-| Cultural Psychology / Cross-Cultural Variation | To understand how culture shapes cognition, emotion, social behavior — critical for global applicability and avoiding ethnocentric bias. | *Psychology 2e* |  |
+| Clinical Psychology | Introduces assessment, diagnosis, and treatment of mental disorders, building practical skills for helping professions. | [*Clinical Psychology*](https://dspace.sxcjpr.edu.in/jspui/bitstream/123456789/1059/1/Copy%20of%20Clinical%20Psychology%20-%20Science%2C%20Practice%2C%20and%20Culture.pdf) | [Basics of Clinical Psychology](https://alison.com/course/basics-of-clinical-psychology) |
+| Counseling Psychology | Focuses on therapeutic techniques and client-centered approaches, enhancing interpersonal and empathetic skills. | [*Counseling the Culturally Diverse*](https://www.homeworkforyou.com/static_media/uploadedfiles/1652980640_717852__796..pdf) | [Introduction to Counseling](https://alison.com/course/introduction-to-counseling-revised) |
+| Psychopathology | Deepens analysis of disorders' etiology and treatment, fostering critical thinking in mental health contexts. | [*Psychopathology: Research, Assessment, and Treatment in Clinical Psychology*](https://www.amazon.com/Psychopathology-Research-Assessment-Treatment-Psychology/dp/1119679184) | Covered in [Basics of Clinical Psychology](https://alison.com/course/basics-of-clinical-psychology) |
+| Ethics in Psychology | Examines professional standards and dilemmas, ensuring responsible practice in clinical settings. | [*Ethics in Psychology and the Mental Health Professions*](https://ndl.ethernet.edu.et/bitstream/123456789/58679/1/35.pdf) | [Psychological Research, Obedience and Ethics](https://www.open.edu/openlearn/society-politics-law/sociology/psychological-research-obedience-and-ethics/content-section-0) |
 
-### Mental Health, Measurement, Applied Domains
+### Cognitive Neuroscience
 
-| Subject | Why study? | Book | Videos |
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| Psychopathology | To understand classification, symptomatology, theories and models of mental disorders — foundational for clinical, counseling, or research interest. | *Psychology 2e* | [Abnormal Psychology (YouTube Playlist)](https://www.youtube.com/playlist?list=PLoajPXQqU0rGQ2z-UEZVk8wtTNQHEZqdu) |
-| Psychological Assessment | To grasp measurement theory, test design, reliability/validity, and how psychological constructs are operationalized and assessed. | *Psychology 2e* |  |
-| Clinical Psychology Foundations (therapy models, ethics, case conceptualization) | For exposure to therapeutic models, case work, ethical, systemic, and cultural considerations in applied psychology. | *Psychology 2e* |  |
-| Industrial-Organizational Psychology (I–O Psychology) | To apply psychological principles to workplace behavior, leadership, teams, organizational structure, motivation. | *Psychology 2e* |  |
+| Neuroscience | Explores advanced brain structures and functions, integrating with psychological theories for interdisciplinary insights. | [*Neuroscience: Exploring the Brain*](https://seti.net/Neuron%20Lab/NeuronReferences/Neuroscience%20-%20Bear.pdf) | [Introduction to Neuroscience](https://ocw.mit.edu/courses/9-01-introduction-to-neuroscience-fall-2007/) |
+| Sensation and Perception | Studies how sensory input becomes meaningful experience, essential for understanding cognitive biases and illusions. | [*Sensation and Perception*](https://dl.icdst.org/pdfs/files3/d644f7eafa754ae8ecf63f98bc942094.pdf) | [Sensation and Perception](https://www.youtube.com/playlist?list=PLz-pxsFiarvKDxHE3JT0RzSImSVySlkjw) |
+| Neuropsychology | Investigates brain damage effects on behavior, applying knowledge to rehabilitation and cognitive assessment. | [*Fundamentals of Human Neuropsychology*](http://ndl.ethernet.edu.et/bitstream/123456789/64005/1/11.pdf) | [Introduction to Cognitive Psychology and Neuropsychology](https://www.edx.org/learn/cognitive-science/university-of-cambridge-introduction-to-cognitive-psychology-and-neuropsychology) |
+| Learning and Memory | Analyzes mechanisms of acquisition, storage, and retrieval, with applications in education and therapy. | [*Learning and Memory*](http://people.whitman.edu/~herbrawt/classes/390/Gluck%202.pdf) | [Learning and Memory](https://www.futurelearn.com/courses/learning-and-memory) |
 
-Notes:
- 
-- For the **general overview**, the free [*Psychology 2e* textbook from OpenStax](https://openstax.org/details/books/psychology-2e) is an excellent backbone: it covers virtually all foundational topics — research methods, biology, cognition, social mind, disorders, etc.
-- For **biology-oriented topics**, the free *Biological Psychology* (Hove & Martinez, 2024) is recent and well-structured for self-learners. [ROTEL](https://rotel.pressbooks.pub/biologicalpsychology/)
-- Lecture-based MOOCs/OCW courses from top universities (e.g. MIT, Yale) give you real “classroom-style” pacing and feel — useful especially when you self-study. [MIT OpenCourseWare](https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-00-introduction-to-psychology-fall-2004/)
+### Social/Organizational Psychology
 
-## Advanced
-
-### Cognitive & Brain Sciences
-
-| Subject | Why study? | Book | Videos |
+| Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
-| Advanced Cognitive Neuroscience | To explore how neural circuits implement cognition, perception, decision-making; link brain structure and function with mental processes. | [*Biological Psychology* by Hove & Martinez](https://rotel.pressbooks.pub/biologicalpsychology/) | [Computational Neuroscience (University of Washington)](https://www.coursera.org/learn/computational-neuroscience) |
-| Computational Modeling for Psychology | To learn formal models of cognition and behavior — helps translate psychological phenomena into computational or mathematical frameworks. | *Psychology 2e* | Covered in Computational Neuroscience (University of Washington) |
-| Attention & Executive Control (Cognitive Control) | To understand control processes in thought, decision-making, inhibition, working memory—core to higher cognition. | [*Cognitive Psychology* by E. Bruce Goldstein](https://www.amazon.com/Cognitive-Psychology-Connecting-Mind-Research/dp/1337408271) |  |
-| Consciousness Studies (Neuroscience of Consciousness / Philosophy of Mind) | To probe perhaps the deepest questions: how subjective experience arises, how consciousness links to brain — vital for advanced understanding of mind. | *Psychology 2e* | [A Romp Through the Philosophy of Mind (Oxford)](https://www.openculture.com/2014/03/a-romp-through-the-philosophy-of-mind-a-free-online-course-from-oxford.html) |
-
-### Clinical & Counseling Foundations
-
-| Subject | Why study? | Book | Videos |
-| --- | --- | --- | --- |
-| Advanced Psychopathology | To understand complex, nuanced models of mental disorders; go beyond lay or pop ideas about “normal vs abnormal.” | *Psychology 2e* |  |
-| Evidence-Based Interventions (CBT, ACT, Psychodynamic, Systems) | To acquire knowledge of therapeutic models, their evidence, limitations, and applications. | *Psychology 2e* |  |
-| Trauma & Resilience / Stress and Mental Health | To understand trauma, stress responses, resilience factors, and therapeutic or preventive strategies — essential for applied mental-health work. | *Psychology 2e* |  |
-| Ethics & Professional Issues in Clinical Practice | To understand ethical, multicultural, and professional standards in therapy, confidentiality, therapist-client dynamics, cultural competence. | *Psychology 2e* |  |
-
-### Social, Cultural & Organizational Psychology
-
-| Subject | Why study? | Book | Videos |
-| --- | --- | --- | --- |
-| Advanced Social Cognition & Moral Psychology | To understand how people think about others, moral reasoning, prejudice, identity — crucial for societal, political, intergroup dynamics. | *Psychology 2e* |  |
-| Cross-Cultural Methods & Cultural Psychology | To study psychological processes across cultures: how culture shapes cognition, emotion, social behavior, preventing ethnocentric bias. | *Psychology 2e* |  |
-| Organizational Behavior / I–O Psychology | To apply psychological principles to work, leadership, teams — useful for real-world applications outside therapy. | *Psychology 2e* |  |
-| Attitudes & Behavior Change / Applied Social Influence | To study persuasion, health psychology, social change, communication — practical in public health, marketing, policy, education. | *Psychology 2e* |  |
-
-### Developmental & Educational Psychology
-
-| Subject | Why study? | Book | Videos |
-| --- | --- | --- | --- |
-| Advanced Developmental Theory (Cognitive, Socioemotional, Moral Development) | To trace how cognition, morality, personality, social behavior evolve — for lifespan understanding or developmental research. | *Psychology 2e* |  |
-| Educational Psychology / Learning & Instructional Design | To learn how learning happens, how to scaffold knowledge, motivate learners — useful for teaching, training, or research. | *Psychology 2e* |  |
-| Atypical Development / Neurodiversity | To understand developmental disorders, neurodiversity, intervention — important for inclusive education, therapy, social work. | *Psychology 2e* |  |
-| Early Childhood Cognition & Developmental Research Methods | To study infancy, childhood cognition, developmental methodology — key for research or educational careers focused on young age groups. | *Psychology 2e* |  |
+| Industrial-Organizational Psychology | Applies psychology to workplace issues like motivation and leadership, improving organizational effectiveness. | [*Work in the 21st Century: An Introduction to Industrial and Organizational Psychology*](https://ftp.idu.ac.id/wp-content/uploads/ebook/ip/BUKU%20MANAJEMEN%20ORGANISASI/An%20Introduction%20to%20Industrial%20and%20Organizational%20Psychology,%204th%20Edition%20(%20PDFDrive%20).pdf) | [Industrial Psychology](https://www.coursera.org/learn/illinois-tech-industrial-psychology-bit) |
+| Group Dynamics | Examines team interactions and processes, useful for conflict resolution and social influence strategies. | [*Group Dynamics*](https://www.gacbe.ac.in/images/E%20books/Group%20Dynamics%20-%20Ed.%205.pdf) | [Group Dynamics](https://www.youtube.com/playlist?list=PL7xIGdTUcr0ovpgmadXoSPcJ0OrIbdPkH) |
+| Organizational Behavior | Integrates social psychology with management, focusing on culture, change, and performance. | [*Organizational Behavior*](https://121.121.140.173:8887/filesharing/kohasharedfolders/Organizational%20Behavior,%20Global%20Edition%20(Stephen%20Robbins,%20Timothy%20Judge)%20(2024).pdf) |  |
+| Cross-Cultural Psychology | Explores cultural influences on behavior, promoting global awareness in diverse social contexts. | [*Cross-Cultural Psychology: Critical Thinking and Contemporary Applications*](https://gsep.pepperdine.edu/content/faculty/levy_cross_cultural_psychology.pdf) | [Global Impact: Cultural Psychology](https://www.coursera.org/learn/cultural-psychology-globalization) |
 
 ## Final Project
 
-For a capstone project (research proposal, literature review, or mini-study), you’ll benefit from resources on research design, academic writing, and ethics.
+Synthesizes knowledge through an independent project. Prerequisite: Completion of Advanced Phase.
 
-| Purpose | Resource | Notes |
-| --- | --- | --- |
-| Research Methods & Design | *Research Methods in Psychology* (Jhangiani et al.) — free OER | Good grounding in research design, measurement, ethics |
-| Academic Writing / Literature Review Skills | University writing-center guides + online academic-writing MOOCs (e.g. from Coursera/edX) | Helps in writing a clean, coherent thesis or review |
-| Ethical Research & Responsible Conduct | Online materials from professional psychology associations (e.g. APA Ethical Guidelines) | Important for any empirical work, surveys, case studies |
-| Data Analysis / Statistics (if doing empirical study) | Free statistics textbooks (e.g. *OpenIntro Statistics*) + open courses on statistics (R, Python, or SPSS-based) | To analyze data if you gather any; or at least understand other studies’ results |
+Focus on applying skills from all prior phases, tailored to the chosen track (e.g., clinical case study for Clinical Psychology).
+
+| Subject | Why study? | Book | Online Course |
+| --- | --- | --- | --- |
+| Capstone Project in Psychology | Integrates theory, research, and practice in a culminating work, demonstrating mastery and preparing for real-world applications. | [*Publication Manual of the American Psychological Association*](https://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/1433832178) |  |
 
 ## Congratulations
 
