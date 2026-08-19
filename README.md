@@ -38,7 +38,6 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 # Communities
 
 - Forums:
-    - [Psych Forums](https://www.psychforums.com/)
     - [Student Doctor Network - Psychology](https://forums.studentdoctor.net/forums/psychology-psy-d-ph-d.57/)
     - [The Grad Cafe - Psychology Forum](https://forum.thegradcafe.com/forum/8-psychology-forum/)
     - [Psychology Forum](https://psychologyforum.com/)
@@ -66,89 +65,86 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 # Curriculum
 
 - [Foundations of Psychology](#foundations-of-psychology)
-- [Scientific Tools of Psychology](#scientific-tools-of-psychology)
+- [Scientific & Quantitative Methods](#scientific--quantitative-methods)
 - [Biological & Perceptual Systems](#biological--perceptual-systems)
-- [Core Cognitive & Learning Systems](#core-cognitive--learning-systems)
-- [Development & Motivation](#development--motivation)
-- [Personality & Measurement](#personality--measurement)
-- [Social & Cultural Systems](#social--cultural-systems)
-- [Mental Health & Applied Psychology](#mental-health--applied-psychology)
-
-*Note*: **Personality & Measurement** is not required for a solid general understanding of the field.
+- [Cognitive Systems & Learning](#cognitive-systems--learning)
+- [Developmental Psychology & Motivation](#developmental-psychology--motivation)
+- [Personality & Psychological Assessment](#personality--psychological-assessment)
+- [Social & Cultural Psychology](#social--cultural-psychology)
+- [Psychopathology & Applied Psychology](#psychopathology--applied-psychology)
 
 # Foundations of Psychology
 
-> What psychology is, where it came from, and how it thinks.
+> What psychology is, its historical evolution, and academic ethics.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Introduction to Psychology | [OpenStax – Psychology 2e](https://openstax.org/details/books/psychology-2e) (free web/PDF) | [Yale PSYC 110](https://oyc.yale.edu/introduction-psychology/psyc-110) (full lectures/videos) |
-| History & Systems | [Benjafield – A History of Psychology](https://archive.org/details/historyofpsychol0000benj_w0y8) (free borrowable scan on Internet Archive) | Yale PSYC 110 (historical lectures) |
-| Ethics in Psychology | [APA Ethics Code](https://www.apa.org/ethics/code) + OpenStax Research Ethics | [Noba Ethics Modules](https://nobaproject.com/modules/why-science) (includes ethics in research/science) |
+| Introduction to Psychology | [OpenStax – Psychology 2e](https://openstax.org/details/books/psychology-2e) (Free open textbook) | [Yale PSYC 110 – Introduction to Psychology](https://oyc.yale.edu/introduction-psychology/psyc-110) (Full course videos & materials) |
+| History & Systems of Psychology | *A History of Modern Psychology* (Schultz & Schultz) or [Benjafield – A History of Psychology](https://archive.org/details/historyofpsychol0000benj_w0y8) | [Yale PSYC 110 – Foundations Lectures](https://oyc.yale.edu/introduction-psychology/psyc-110) |
+| Research Ethics & Scientific Integrity | [APA Ethical Principles of Psychologists and Code of Conduct](https://www.apa.org/ethics/code) | [Noba – Why Science? The Epistemology and Ethics of Psychology](https://nobaproject.com/modules/why-science) |
 
-# Scientific Tools of Psychology
+# Scientific & Quantitative Methods
 
-> How psychologists generate and evaluate knowledge.
+> How psychologists design empirical studies and evaluate behavioral data.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Statistics for Psychology | [Gravetter & Wallnau – Statistics for the Behavioral Sciences](https://archive.org/details/statisticsforbeh0000grav_s3u5) (free borrowable scan) | [Khan Academy Statistics](https://www.khanacademy.org/math/statistics-probability) (full free course) |
-| Research Methods | [Shaughnessy et al. – Research Methods in Psychology](https://archive.org/details/researchmethodsi0000shau_10ed) (free borrowable scan) | [edX Introduction to Psychological Research Methods](https://www.edx.org/course/introduction-to-psychological-research-methods) (free to audit) |
+| Statistics for Psychology | [Learning Statistics with Jamovi](https://www.learnstatswithjamovi.com/) (Free open-access text by Navarro & Foxcroft) | [Khan Academy – Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) |
+| Research Methods in Psychology | [Research Methods in Psychology](https://opentextbc.ca/researchmethods/) (Open Textbook by Jhangiani et al.) | [CrashCourse – Psychological Research](https://www.youtube.com/watch?v=hFV71WFaXyU) + Noba Research Designs Series |
 
 # Biological & Perceptual Systems
 
-> How brains produce experience.
+> Brain architecture, neural communication, and sensory processing.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Biological Psychology | OpenStax Psychology 2e (Neuroscience chapters) | [Stanford Human Behavioral Biology](https://www.youtube.com/playlist?list=PLqeYp3nxIYpF7dW7qK8OvLsVomHrnYNjD) (full Sapolsky lectures on YouTube) |
-| Sensation & Perception | OpenStax Psychology 2e | [MIT OCW Sensation & Perception](https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/) (full course materials) |
+| Biological Psychology (Behavioral Neuroscience) | *Biological Psychology* (James W. Kalat) or [Noba – Biological Basis of Behavior Collection](https://nobaproject.com/) | [Stanford – Human Behavioral Biology](https://www.youtube.com/playlist?list=PL848F2368C90DDC3D) (Robert Sapolsky Lecture Series) |
+| Sensation & Perception | *Sensation and Perception* (Goldstein & Brockmole) or [Noba – Sensation and Perception](https://nobaproject.com/modules/sensation-and-perception) | [MIT OCW 9.35 – Sensation And Perception](https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/) |
 
-# Core Cognitive & Learning Systems
+# Cognitive Systems & Learning
 
-> How minds process information and change.
+> How the mind acquires behavior, encodes information, reasons, and remembers.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Cognitive Psychology | [Noba – Cognitive Psychology Collection](https://nobaproject.com/) (browse modules) | Yale Cognition lectures (PSYC 110 subset) |
-| Learning & Conditioning | [Noba – Learning](https://nobaproject.com/modules/conditioning-and-learning) | [MIT OCW Neural Basis of Learning and Memory](https://ocw.mit.edu/courses/9-03-neural-basis-of-learning-and-memory-fall-2007/) (related full course) |
-| Memory & Attention | [Noba – Memory & Attention](https://nobaproject.com/) (related modules) | MIT OCW Cognitive Science |
+| Cognitive Psychology | *Cognitive Psychology: Connecting Mind, Research, and Everyday Experience* (E. Bruce Goldstein) | [Noba – Cognition Series](https://nobaproject.com/) (Modules on Memory, Attention, Language, and Problem Solving) |
+| Learning & Behavior Analysis | *Introduction to Learning and Behavior* (Powell, Honey, & Symbaluk) | [Noba – Conditioning and Learning](https://nobaproject.com/modules/conditioning-and-learning) |
 
-# Development & Motivation
+# Developmental Psychology & Motivation
 
-> How humans grow and what drives them.
+> Human maturation across the lifespan and the drivers of behavior.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Developmental Psychology | OpenStax Psychology 2e (Lifespan) | [Open University Introduction to Child Psychology](https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology/content-section-0) (free course; extends to lifespan concepts) |
-| Motivation & Emotion | [Noba – Motivation & Emotion](https://nobaproject.com/) (related modules) | [Yale PSYC 110 Emotion Lectures](https://oyc.yale.edu/psychology/psyc-110/lecture-11) (e.g., Emotions Parts I/II) |
+| Lifespan Developmental Psychology | *Development Through the Lifespan* (Laura E. Berk) or [Noba – Lifespan Development Series](https://nobaproject.com/) | [The Open University – Introduction to Child Psychology](https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology/content-section-0) |
+| Motivation & Emotion | *Understanding Motivation and Emotion* (Johnmarshall Reeve) | [Yale PSYC 110 – Emotions Lectures](https://oyc.yale.edu/psychology/psyc-110/lecture-11) |
 
-# Personality & Measurement
+# Personality & Psychological Assessment
 
-> How people differ and how we measure it.
+> Individual differences, personality structure, and measurement theory.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Personality Psychology | [Noba – Personality](https://nobaproject.com/) | YouTube: Personality Theory (APA-aligned) |
-| Psychological Testing | [Noba – Psychological Measurement](https://nobaproject.com/) | Open University Psychometrics |
+| Personality Psychology | *Personality Psychology: Domains of Knowledge About Human Nature* (Larsen & Buss) | [Noba – Personality Traits & Theory](https://nobaproject.com/modules/personality-traits) |
+| Psychological Assessment & Psychometrics | *Psychological Testing: Principles, Applications, and Issues* (Kaplan & Saccuzzo) | [Noba – Psychological Measurement & Assessment](https://nobaproject.com/) |
 
-# Social & Cultural Systems
+# Social & Cultural Psychology
 
-> How humans influence each other.
+> Social cognition, group dynamics, cultural context, and interpersonal influence.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Social Psychology | [Noba – Social Psychology](https://nobaproject.com/) | Yale SOM Social Psychology |
-| Cultural Psychology | [Noba – Cultural Psychology](https://nobaproject.com/) | MIT OCW Culture & Cognition |
+| Social Psychology | *Social Psychology* (Kassin, Fein, & Markus) or [Noba – Social Psychology Collection](https://nobaproject.com/) | [Coursera / Wesleyan – Social Psychology](https://www.coursera.org/learn/social-psychology) (Taught by Prof. Scott Plous) |
+| Cultural Psychology | *Cultural Psychology* (Steven J. Heine) or [Noba – Culture](https://nobaproject.com/modules/culture) | [Noba – Culture & Cognition Series](https://nobaproject.com/) |
 
-# Mental Health & Applied Psychology
+# Psychopathology & Applied Psychology
 
-> When systems break—and how we intervene.
+> Psychological disorders, evidence-based treatments, and health interventions.
 
-| Subject | Book | Course |
+| Subject | Primary Book / Reading | Recommended Course / Lecture Series |
 | --- | --- | --- |
-| Abnormal Psychology | OpenStax Psychology 2e + Noba Abnormal | Yale Psychopathology |
-| Health Psychology | OpenStax Psychology 2e | Stanford Health Psychology |
+| Abnormal Psychology (Psychopathology) | *Abnormal Psychology: An Integrative Approach* (Barlow, Durand, & Hofmann) | [UQx / edX – Introduction to Clinical Psychology](https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-clinical-psychology) |
+| Health & Clinical Psychology Foundations | *Health Psychology* (Shelley E. Taylor) or [Noba – Helping and Prosocial Behavior](https://nobaproject.com/) | [Noba – Therapeutic Orientations and Clinical Interventions](https://nobaproject.com/modules/therapeutic-orientations) |
 
 # Code of conduct
 

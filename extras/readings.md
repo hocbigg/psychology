@@ -32,5 +32,3 @@ Or, if you are struggling in one of the courses, perhaps reading a book on the s
 | [NOBA Psychology Textbook](https://nobaproject.com/textbooks) | Multiple authors |
 | [OpenStax Psychology](https://openstax.org/details/books/psychology-2e) | OpenStax |
 | [Principles of Social Psychology](https://opentextbc.ca/socialpsychology/) | BCcampus |
-| [Research Methods in Psychology](https://opentext.wsu.edu/carr/) | OpenStax-derived |
-| [Introduction to Neuroscience (LibreTexts)](https://bio.libretexts.org/Bookshelves/Neuroscience) | LibreTexts |

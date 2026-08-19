@@ -11,14 +11,12 @@ or that there was an alternative that fit better into the curriculum.
 | :-- | :--: | :--: | 
 | [Introduction to Psychology (MIT OCW 9.00SC)](https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/) | self-paced | 6–12 h/wk |
 | [Psychology 101 (UC Berkeley – YouTube playlist)](https://youtube.com/playlist?list=PL-XXv-cvA_iD3pDs_C6JwQ0MXvjYxDc6H) | 29 lectures | — |
-| [Affective Neuroscience (MIT OCW 9.13)](https://ocw.mit.edu/courses/9-13-the-human-brain-fall-2007/) | self-paced | 6–10 h/wk |
 
 
 ## Neuroscience & Biological Bases of Behavior
 
 | Courses | Duration | Effort |
 | :-- | :--: | :--: |
-| [MIT OCW – Systems Neuroscience (9.14)](https://ocw.mit.edu/courses/9-14-brains-minds-and-machines-fall-2014/) | self-paced | 6–10 h/wk |
 | [Medical Neurobiology (UNC / Coursera)](https://www.coursera.org/learn/medical-neurobiology) | 6 weeks | 4–6 h/wk |
 | [Neuroimaging and Neuroanatomy (Oxford / YouTube)](https://www.youtube.com/playlist?list=PLqLzYkVYheZgv4aO7AJZciV06Pvx8wI35) | — | — |
 
@@ -56,7 +54,6 @@ or that there was an alternative that fit better into the curriculum.
 | :-- | :--: | :--: |
 | [Moralities of Everyday Life (Yale / Coursera)](https://www.coursera.org/learn/moralities) | 6 weeks | 4–6 h/wk |
 | [Human Emotion (UC Berkeley – YouTube)](https://www.youtube.com/playlist?list=PLF2D205BD88BB1916) | — | — |
- [Cognitive Neuroscience (MIT OCW 9.18)](https://ocw.mit.edu/courses/9-18a-b-cognitive-neuroscience-fall-2002/) | self-paced | 6–10 h/wk |
 
 ### Online Learning - Great Courses
 
