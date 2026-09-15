@@ -1,43 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/psychology/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics - Psychology</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <link rel="canonical" href="https://hocbigg.github.io/psychology/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics - Psychology">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/psychology/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/psychology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/psychology/">Psychology</a>
-<a href="/psychology/advanced_topics.html">Advanced Topics</a>
-<a href="/psychology/projects.html">Projects</a>
-<a href="/psychology/extras/courses.html">Extra Courses</a>
-<a href="/psychology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/psychology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/psychology/">Psychology</a></li>
+      <li><a href="/psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/psychology/projects.html">Projects</a></li>
+      <li><a href="/psychology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/psychology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
-<p><em>work in progress</em></p>
-</article>
-</main>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-psychology">Advanced Topics - Psychology</h1>
+<p>The following tracks branch out from foundational psychology into specialized subfields, advanced computational paradigms, and practical applications. Learners should select one or two tracks aligned with their research interests or professional objectives rather than attempting to complete every specialization.</p>
+<ul>
+<li><a href="#cognitive-neuroscience--neuropsychology">Cognitive Neuroscience &amp; Neuropsychology</a>: Investigation of neural architecture, functional localization, electrophysiology, and the behavioral consequences of focal brain lesions.</li>
+<li><a href="#computational-cognitive-science--behavioral-modeling">Computational Cognitive Science &amp; Behavioral Modeling</a>: Algorithmic, Bayesian, and biologically plausible neural modeling of learning, memory, and decision dynamics.</li>
+<li><a href="#clinical-science-evidence-based-psychotherapy--nosology">Clinical Science, Evidence-Based Psychotherapy &amp; Nosology</a>: Empirical psychotherapeutic interventions, transdiagnostic treatment protocols, neurochemical mechanisms, and psychological assessment.</li>
+<li><a href="#applied-social-organizational--behavioral-economics">Applied Social, Organizational &amp; Behavioral Economics</a>: Translation of cognitive biases, social influence, and choice architecture into institutional design, workplace systems, and policy.</li>
+<li><a href="#advanced-quantitative-methods-psychometrics--meta-science">Advanced Quantitative Methods, Psychometrics &amp; Meta-Science</a>: Latent variable structures, modern test theory, hierarchical Bayesian estimation, and the replication crisis.</li>
+</ul>
+<h2 id="cognitive-neuroscience-neuropsychology">Cognitive Neuroscience &amp; Neuropsychology</h2>
+<p>Explores the functional architecture of the human brain, mapping neural circuitry to cognitive operations, affective states, and lesion-induced behavioral deficits.</p>
+<p>Cortical Organization &amp; Functional Localization: <a href="https://ocw.mit.edu/courses/9-13-the-human-brain-spring-2019/" target="_blank" rel="noopener noreferrer">9.13 The Human Brain (MIT OpenCourseWare / Nancy Kanwisher)</a> - Comprehensive open course surveying how visual recognition, language, spatial navigation, and theory of mind map onto specialized cortical regions.</p>
+<p>Functional Magnetic Resonance Imaging (fMRI): <a href="https://www.coursera.org/learn/functional-mri" target="_blank" rel="noopener noreferrer">Principles of fMRI 1 (Johns Hopkins University / Martin Lindquist &amp; Tor Wager / Coursera)</a> - Practical, free-to-audit course teaching MR physics, experimental paradigm design, hemodynamic response modeling, and statistical analysis via the General Linear Model.</p>
+<p>Electrophysiology &amp; Event-Related Potentials: <a href="https://books.google.com/books?isbn=9780262525855" target="_blank" rel="noopener noreferrer">An Introduction to the Event-Related Potential Technique (Steven J. Luck)</a> - The authoritative practical manual for designing experiments, eliminating artifacts, and isolating high-temporal-resolution electrical signals in cognitive research.</p>
+<p>Clinical Neuropsychology &amp; Lesion Analysis: <a href="https://books.google.com/books?isbn=9781319247164" target="_blank" rel="noopener noreferrer">Fundamentals of Human Neuropsychology (Bryan Kolb &amp; Ian Q. Whishaw)</a> - Standard clinical textbook detailing how focal brain damage, cerebrovascular strokes, traumatic brain injury, and neurodegenerative disorders alter cognitive faculties.</p>
+<h2 id="computational-cognitive-science-behavioral-modeling">Computational Cognitive Science &amp; Behavioral Modeling</h2>
+<p>Applies mathematical, algorithmic, and statistical models to describe cognitive architecture, associative learning, and human decision processes.</p>
+<p>Neural Network &amp; Biologically Based Modeling: <a href="https://compcogneuro.org/" target="_blank" rel="noopener noreferrer">Computational Cognitive Neuroscience (Randall C. O'Reilly et al. / LibreTexts &amp; CCNLab)</a> - A free open textbook and simulation platform using biologically plausible spiking neural networks to model perception, working memory gating, and executive function.</p>
+<p>Reinforcement Learning &amp; Neurocomputational Systems: <a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" rel="noopener noreferrer">Reinforcement Learning: An Introduction (Richard S. Sutton &amp; Andrew G. Barto)</a> - Canonical, freely accessible textbook detailing Markov decision processes, temporal-difference learning, and their alignment with biological dopamine signaling.</p>
+<p>Bayesian Cognitive Modeling: <a href="https://books.google.com/books?isbn=9781107603578" target="_blank" rel="noopener noreferrer">Bayesian Cognitive Modeling: A Practical Course (Michael D. Lee &amp; Eric-Jan Wagenmakers)</a> - Hands-on computational guide to implementing graphical Bayesian models of memory, categorization, and signal detection using Stan and JAGS.</p>
+<p>Evidence Accumulation &amp; Drift-Diffusion Decision Models: <a href="https://books.google.com/books?isbn=9781493922352" target="_blank" rel="noopener noreferrer">An Introduction to Model-Based Cognitive Neuroscience (Birte U. Forstmann &amp; Eric-Jan Wagenmakers)</a> - Advanced text linking stochastic evidence-accumulation frameworks directly to speeded response time distributions and neuroimaging data.</p>
+<h2 id="clinical-science-evidence-based-psychotherapy-nosology">Clinical Science, Evidence-Based Psychotherapy &amp; Nosology</h2>
+<p>Investigates empirical psychotherapeutic modalities, transdiagnostic diagnostic systems, psychopharmacology, and standardized clinical case formulation.</p>
+<p>Cognitive Behavior Therapy &amp; Case Conceptualization: <a href="https://books.google.com/books?isbn=9781462544196" target="_blank" rel="noopener noreferrer">Cognitive Behavior Therapy: Basics and Beyond (Judith S. Beck)</a> - Essential practitioner guide covering cognitive case formulation, restructuring maladaptive automatic thoughts, and conducting structured therapy sessions.</p>
+<p>Transdiagnostic Emotional Interventions: <a href="https://books.google.com/books?isbn=9780190685973" target="_blank" rel="noopener noreferrer">Unified Protocol for Transdiagnostic Treatment of Emotional Disorders: Therapist Guide (David H. Barlow et al.)</a> - Clinical manual presenting an empirical alternative to categorical DSM diagnoses that directly targets shared mechanisms of emotional dysregulation across anxiety and mood disorders.</p>
+<p>Neurobiology of Mental Disorders &amp; Clinical Psychopharmacology: <a href="https://books.google.com/books?isbn=9781108971638" target="_blank" rel="noopener noreferrer">Stahl's Essential Psychopharmacology: Neuroscientific Basis and Practical Applications (Stephen M. Stahl)</a> - The standard visual and conceptual guide to neurotransmitter circuitry, receptor targets, and the pharmacological actions of psychiatric medications.</p>
+<p>Comprehensive Clinical Assessment &amp; Case Formulation: <a href="https://books.google.com/books?isbn=9781118960646" target="_blank" rel="noopener noreferrer">Handbook of Psychological Assessment (Gary Groth-Marnat &amp; A. Jordan Wright)</a> - Definitive clinical reference on selecting, administering, and interpreting standardized batteries (WAIS, MMPI, PAI) and synthesizing results into cohesive clinical reports.</p>
+<h2 id="applied-social-organizational-behavioral-economics">Applied Social, Organizational &amp; Behavioral Economics</h2>
+<p>Translates behavioral science and social cognitive principles into the design of public policy, organizational workflows, choice architecture, and group interventions.</p>
+<p>Applied Behavioral Economics &amp; Choice Architecture: <a href="https://www.edx.org/course/behavioural-economics-in-action" target="_blank" rel="noopener noreferrer">BE101x: Behavioural Economics in Action (University of Toronto / Dilip Soman / edX)</a> - Practical, free-to-audit course on translating heuristics and biases into field experiments, nudges, and policy interventions.</p>
+<p>Heuristics, Biases &amp; Behavioral Decision Theory: <a href="https://books.google.com/books?isbn=9780521284141" target="_blank" rel="noopener noreferrer">Judgment under Uncertainty: Heuristics and Biases (Daniel Kahneman, Paul Slovic, &amp; Amos Tversky)</a> - Foundational collection detailing the empirical research behind representativeness, availability, anchoring, and choice anomalies under risk.</p>
+<p>Industrial, Organizational &amp; Workplace Psychology: <a href="https://books.google.com/books?isbn=9781119493440" target="_blank" rel="noopener noreferrer">Work in the 21st Century: An Introduction to Industrial and Organizational Psychology (Jeffrey M. Conte &amp; Frank J. Landy)</a> - Standard comprehensive text covering personnel selection, performance appraisal, employee motivation, leadership styles, and occupational health.</p>
+<p>Advanced Social Cognition &amp; Intergroup Dynamics: <a href="https://books.google.com/books?isbn=9781529702088" target="_blank" rel="noopener noreferrer">Social Cognition: From Brains to Culture (Susan T. Fiske &amp; Shelley E. Taylor)</a> - Authoritative monograph on automatic vs. controlled cognitive processes, attribution theory, implicit stereotypes, and the neural substrates of social prejudice.</p>
+<h2 id="advanced-quantitative-methods-psychometrics-meta-science">Advanced Quantitative Methods, Psychometrics &amp; Meta-Science</h2>
+<p>Focuses on multivariate modeling, latent measurement theory, Bayesian estimation, and methodological reforms surrounding scientific reproducibility.</p>
+<p>Structural Equation Modeling (SEM) &amp; Latent Variables: <a href="https://books.google.com/books?isbn=9781462551910" target="_blank" rel="noopener noreferrer">Principles and Practice of Structural Equation Modeling (Rex B. Kline)</a> - Applied guide to covariance structure modeling, confirmatory factor analysis, mediation models, and latent growth curves.</p>
+<p>Item Response Theory (IRT) &amp; Modern Psychometrics: <a href="https://books.google.com/books?isbn=9780805828191" target="_blank" rel="noopener noreferrer">Item Response Theory for Psychologists (Susan E. Embretson &amp; Steven P. Reise)</a> - Practical introduction to logistic test models, item characteristic curves, differential item functioning (DIF), and computerized adaptive testing.</p>
+<p>Bayesian Multilevel Modeling: <a href="https://www.youtube.com/playlist?list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN" target="_blank" rel="noopener noreferrer">Statistical Rethinking (Richard McElreath / Max Planck Institute)</a> - Complete university lecture series teaching hierarchical modeling, generalized linear models, Markov chain Monte Carlo methods, and causal inference with DAGs.</p>
+<p>Meta-Science, Statistical Rigor &amp; Open Science: <a href="https://www.coursera.org/learn/statistical-inferences" target="_blank" rel="noopener noreferrer">Improving Your Statistical Inferences (Eindhoven University of Technology / Daniel Lakens / Coursera)</a> - Free-to-audit course addressing the replication crisis, covering statistical power planning, p-hacking prevention, preregistration, equivalence testing, and open science.</p>
+    </article>
+  </main>
 
 </body>
 </html>

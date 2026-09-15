@@ -1,336 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Psychology</title>
-<link rel="stylesheet" href="/psychology/style.css">
-<meta name="description" content="Path to a free self-taught education in Psychology!">
+  <title>Hocbigg - Psychology</title>
+  <meta name="description" content="Path to a free self-taught education in Psychology">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <meta property="og:title" content="Hocbigg - Psychology">
+  <meta property="og:description" content="Path to a free self-taught education in Psychology">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/psychology/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Psychology">
-<meta property="og:description" content="Path to a free self-taught education in Psychology!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/psychology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/psychology/">Psychology</a>
-<a href="/psychology/advanced_topics.html">Advanced Topics</a>
-<a href="/psychology/projects.html">Projects</a>
-<a href="/psychology/extras/courses.html">Extra Courses</a>
-<a href="/psychology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/psychology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/psychology/">Psychology</a></li>
+      <li><a href="/psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/psychology/projects.html">Projects</a></li>
+      <li><a href="/psychology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/psychology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Psychology</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-15">2026-09-15</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Psychology is the scientific study of the mind, brain, and behavior. It investigates how neurobiological mechanisms, perceptual processes, cognitive architectures, developmental trajectories, and social contexts interact to generate human thought and action. This curriculum provides a rigorous undergraduate-level foundation for independent learners seeking to understand how the discipline formulates theories, conducts empirical research, and evaluates behavioral evidence. It assumes no prior formal training in psychology, biology, or advanced mathematics; all necessary concepts are built up from first principles.</p>
+<h3 id="structure-and-sequencing">Structure and Sequencing</h3>
+<p>The curriculum is structured around ten foundational subjects that cover the primary empirical domains of the discipline:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Start with the foundations:</strong> Complete <em>Introduction to Psychology</em> and <em>Research Methods and Statistics in Psychology</em> first. These two subjects establish the conceptual vocabulary of the field and teach you how to evaluate empirical claims critically, distinguishing controlled experimental findings from intuition, confounding variables, and pop-psychology assumptions.</li>
+<li><strong>Explore domain subjects flexibly:</strong> Once the first two subjects are complete, the remaining eight subjects can be studied in whatever sequence aligns with your interests. However, working through <em>Biological Psychology</em> before <em>Sensation and Perception</em> or <em>Cognitive Psychology</em> provides helpful physiological context for understanding neural transmission, sensory transduction, and information processing.</li>
+<li><strong>Select your preferred learning format:</strong> Most subjects pair a primary open-access textbook with a canonical reference text or a complete video lecture series. You do not need to read or watch every listed resource to achieve foundational competency; choose the primary text or lecture format that best fits your study habits, using additional resources only when a topic warrants deeper clarification.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Psychology curriculum is a <strong>complete education in Psychology</strong> using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<h3 id="next-steps">Next Steps</h3>
+<p>This curriculum focuses strictly on the universal core: the shared body of theories, classic experiments, and methodological standards that every student in the discipline should understand before specializing. It avoids narrow upper-division electives, occupational credential tracks, and specialized laboratory methodologies.</p>
+<p>Once you have built this foundational base, you can branch out into specialized subfields in <a href="advanced_topics.html">Advanced Topics</a>, build tangible research artifacts in <a href="projects.html">Projects</a>, study field-shaping monographs and seminal papers in <a href="extras/readings.html">Readings</a>, or explore extended university lecture series in <a href="extras/courses.html">Courses</a>.</p>
+<h2 id="communities">Communities</h2>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
-</ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
-<ul>
-<li>
-<p>Forums:</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.psychforums.com/">Psych Forums</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://forums.studentdoctor.net/forums/psychology-psy-d-ph-d.57/">Student Doctor Network - Psychology</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://forum.thegradcafe.com/forum/8-psychology-forum/">The Grad Cafe - Psychology Forum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://psychologyforum.com/">Psychology Forum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.socialpsychology.org/forums.htm">Social Psychology Network Forums</a></li>
+<li>Forums:<ul>
+<li><a href="https://forums.studentdoctor.net/forums/psychology-psy-d-ph-d.57/" target="_blank" rel="noopener noreferrer">Student Doctor Network - Psychology</a></li>
+<li><a href="https://forum.thegradcafe.com/forum/8-psychology-forum/" target="_blank" rel="noopener noreferrer">The Grad Cafe - Psychology Forum</a></li>
+<li><a href="https://psychologyforum.com/" target="_blank" rel="noopener noreferrer">Psychology Forum</a></li>
+<li><a href="https://www.socialpsychology.org/forums.htm" target="_blank" rel="noopener noreferrer">Social Psychology Network Forums</a></li>
 </ul>
 </li>
-<li>
-<p>Subreddits:</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/psychology/">r/psychology</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/psychologystudents/">r/psychologystudents</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/AcademicPsychology/">r/AcademicPsychology</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/psychologyresearch/">r/psychologyresearch</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/socialpsychology/">r/socialpsychology</a></li>
+<li>Subreddits:<ul>
+<li><a href="https://www.reddit.com/r/psychology/" target="_blank" rel="noopener noreferrer">r/psychology</a></li>
+<li><a href="https://www.reddit.com/r/psychologystudents/" target="_blank" rel="noopener noreferrer">r/psychologystudents</a></li>
+<li><a href="https://www.reddit.com/r/AcademicPsychology/" target="_blank" rel="noopener noreferrer">r/AcademicPsychology</a></li>
+<li><a href="https://www.reddit.com/r/psychologyresearch/" target="_blank" rel="noopener noreferrer">r/psychologyresearch</a></li>
+<li><a href="https://www.reddit.com/r/socialpsychology/" target="_blank" rel="noopener noreferrer">r/socialpsychology</a></li>
 </ul>
 </li>
 <li>Discord servers:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/psychology">Psychology Den</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/5mKZ6AxyEr">Psychology Nerds</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/cognition">Noetica (Psychometrics &amp; Psychology)</a></li>
+<li><a href="https://discord.gg/psychology" target="_blank" rel="noopener noreferrer">Psychology Den</a></li>
+<li><a href="https://discord.gg/5mKZ6AxyEr" target="_blank" rel="noopener noreferrer">Psychology Nerds</a></li>
+<li><a href="https://discord.gg/cognition" target="_blank" rel="noopener noreferrer">Noetica (Psychometrics &amp; Psychology)</a></li>
 </ul>
 </li>
 <li>Other:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://kaitclark.github.io/mastodon-psychology/">Psychologists on Mastodon</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://sciences.social/">sciences.social (Mastodon Instance)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.apa.org/members/communities">APA Online Communities</a></li>
+<li><a href="https://kaitclark.github.io/mastodon-psychology/" target="_blank" rel="noopener noreferrer">Psychologists on Mastodon</a></li>
+<li><a href="https://sciences.social/" target="_blank" rel="noopener noreferrer">sciences.social (Mastodon Instance)</a></li>
+<li><a href="https://www.apa.org/members/communities" target="_blank" rel="noopener noreferrer">APA Online Communities</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/psychology/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/psychology/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundations-of-psychology">Foundations of Psychology</a></li>
-<li><a href="#scientific-tools-of-psychology">Scientific Tools of Psychology</a></li>
-<li><a href="#biological--perceptual-systems">Biological &amp; Perceptual Systems</a></li>
-<li><a href="#core-cognitive--learning-systems">Core Cognitive &amp; Learning Systems</a></li>
-<li><a href="#development--motivation">Development &amp; Motivation</a></li>
-<li><a href="#personality--measurement">Personality &amp; Measurement</a></li>
-<li><a href="#social--cultural-systems">Social &amp; Cultural Systems</a></li>
-<li><a href="#mental-health--applied-psychology">Mental Health &amp; Applied Psychology</a></li>
-</ul>
-<p><em>Note</em>: <strong>Personality &amp; Measurement</strong> is not required for a solid general understanding of the field.</p>
-<h1 id="foundations-of-psychology">Foundations of Psychology</h1>
-<blockquote>
-<p>What psychology is, where it came from, and how it thinks.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Introduction to Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://openstax.org/details/books/psychology-2e">OpenStax – Psychology 2e</a> (free web/PDF)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/introduction-psychology/psyc-110">Yale PSYC 110</a> (full lectures/videos)</td>
-</tr>
-<tr>
-<td>History &amp; Systems</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/historyofpsychol0000benj_w0y8">Benjafield – A History of Psychology</a> (free borrowable scan on Internet Archive)</td>
-<td>Yale PSYC 110 (historical lectures)</td>
-</tr>
-<tr>
-<td>Ethics in Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.apa.org/ethics/code">APA Ethics Code</a> + OpenStax Research Ethics</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/modules/why-science">Noba Ethics Modules</a> (includes ethics in research/science)</td>
-</tr>
-</tbody>
-</table>
-<h1 id="scientific-tools-of-psychology">Scientific Tools of Psychology</h1>
-<blockquote>
-<p>How psychologists generate and evaluate knowledge.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Statistics for Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/statisticsforbeh0000grav_s3u5">Gravetter &amp; Wallnau – Statistics for the Behavioral Sciences</a> (free borrowable scan)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.khanacademy.org/math/statistics-probability">Khan Academy Statistics</a> (full free course)</td>
-</tr>
-<tr>
-<td>Research Methods</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/researchmethodsi0000shau_10ed">Shaughnessy et al. – Research Methods in Psychology</a> (free borrowable scan)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/course/introduction-to-psychological-research-methods">edX Introduction to Psychological Research Methods</a> (free to audit)</td>
-</tr>
-</tbody>
-</table>
-<h1 id="biological-perceptual-systems">Biological &amp; Perceptual Systems</h1>
-<blockquote>
-<p>How brains produce experience.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Biological Psychology</td>
-<td>OpenStax Psychology 2e (Neuroscience chapters)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLqeYp3nxIYpF7dW7qK8OvLsVomHrnYNjD">Stanford Human Behavioral Biology</a> (full Sapolsky lectures on YouTube)</td>
-</tr>
-<tr>
-<td>Sensation &amp; Perception</td>
-<td>OpenStax Psychology 2e</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/">MIT OCW Sensation &amp; Perception</a> (full course materials)</td>
-</tr>
-</tbody>
-</table>
-<h1 id="core-cognitive-learning-systems">Core Cognitive &amp; Learning Systems</h1>
-<blockquote>
-<p>How minds process information and change.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cognitive Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Cognitive Psychology Collection</a> (browse modules)</td>
-<td>Yale Cognition lectures (PSYC 110 subset)</td>
-</tr>
-<tr>
-<td>Learning &amp; Conditioning</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/modules/conditioning-and-learning">Noba – Learning</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-03-neural-basis-of-learning-and-memory-fall-2007/">MIT OCW Neural Basis of Learning and Memory</a> (related full course)</td>
-</tr>
-<tr>
-<td>Memory &amp; Attention</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Memory &amp; Attention</a> (related modules)</td>
-<td>MIT OCW Cognitive Science</td>
-</tr>
-</tbody>
-</table>
-<h1 id="development-motivation">Development &amp; Motivation</h1>
-<blockquote>
-<p>How humans grow and what drives them.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Developmental Psychology</td>
-<td>OpenStax Psychology 2e (Lifespan)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology/content-section-0">Open University Introduction to Child Psychology</a> (free course; extends to lifespan concepts)</td>
-</tr>
-<tr>
-<td>Motivation &amp; Emotion</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Motivation &amp; Emotion</a> (related modules)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/psychology/psyc-110/lecture-11">Yale PSYC 110 Emotion Lectures</a> (e.g., Emotions Parts I/II)</td>
-</tr>
-</tbody>
-</table>
-<h1 id="personality-measurement">Personality &amp; Measurement</h1>
-<blockquote>
-<p>How people differ and how we measure it.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Personality Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Personality</a></td>
-<td>YouTube: Personality Theory (APA-aligned)</td>
-</tr>
-<tr>
-<td>Psychological Testing</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Psychological Measurement</a></td>
-<td>Open University Psychometrics</td>
-</tr>
-</tbody>
-</table>
-<h1 id="social-cultural-systems">Social &amp; Cultural Systems</h1>
-<blockquote>
-<p>How humans influence each other.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Social Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Social Psychology</a></td>
-<td>Yale SOM Social Psychology</td>
-</tr>
-<tr>
-<td>Cultural Psychology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/">Noba – Cultural Psychology</a></td>
-<td>MIT OCW Culture &amp; Cognition</td>
-</tr>
-</tbody>
-</table>
-<h1 id="mental-health-applied-psychology">Mental Health &amp; Applied Psychology</h1>
-<blockquote>
-<p>When systems break—and how we intervene.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Abnormal Psychology</td>
-<td>OpenStax Psychology 2e + Noba Abnormal</td>
-<td>Yale Psychopathology</td>
-</tr>
-<tr>
-<td>Health Psychology</td>
-<td>OpenStax Psychology 2e</td>
-<td>Stanford Health Psychology</td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="introduction-to-psychology">Introduction to Psychology</h3>
+<p>Surveys the scientific study of the human mind and behavior, introducing foundational theories and empirical findings across neuroscience, cognition, development, and social interaction.</p>
+<p><a href="https://openstax.org/details/books/psychology-2e" target="_blank" rel="noopener noreferrer">Psychology 2e (OpenStax)</a> - A comprehensive, peer-reviewed open textbook covering core terminology, foundational theories, and major subfields of the discipline.</p>
+<p><a href="https://oyc.yale.edu/psychology/psyc-110" target="_blank" rel="noopener noreferrer">PSYC 110: Introduction to Psychology (Open Yale Courses / Paul Bloom)</a> - A video lecture alternative or companion to OpenStax, offering an engaging overview of foundational psychological debates and landmark experiments.</p>
+<h3 id="research-methods-and-statistics-in-psychology">Research Methods and Statistics in Psychology</h3>
+<p>Examines empirical research design, measurement reliability and validity, human research ethics, and the statistical reasoning required to interpret behavioral data.</p>
+<p><a href="https://kpu.pressbooks.pub/psychmethods4e/" target="_blank" rel="noopener noreferrer">Research Methods in Psychology (Rajiv S. Jhangiani et al. / KPU Pressbooks)</a> - A peer-reviewed open textbook providing complete instruction in the scientific method, experimental and non-experimental designs, research ethics, and basic statistical inference.</p>
+<p><a href="https://www.learnstatswithjamovi.com/" target="_blank" rel="noopener noreferrer">Learning Statistics with Jamovi (Danielle J. Navarro &amp; David R. Foxcroft)</a> - A complementary open guide that builds intuitive statistical literacy, covering descriptive statistics, correlation, and hypothesis testing without mathematical intimidation.</p>
+<h3 id="biological-psychology">Biological Psychology</h3>
+<p>Investigates the physiological and neurobiological mechanisms underlying behavior, including neuroanatomy, neural signaling, hormones, and evolutionary processes.</p>
+<p><a href="https://rotel.pressbooks.pub/biologicalpsychology/" target="_blank" rel="noopener noreferrer">Biological Psychology (Michael J. Hove &amp; Steven A. Martinez / ROTEL Project)</a> - A free open textbook detailing neural communication, brain organization, and biological bases of complex behavior.</p>
+<p><a href="https://books.google.com/books?isbn=9781337408202" target="_blank" rel="noopener noreferrer">Biological Psychology (James W. Kalat)</a> - An alternative canonical textbook widely considered the standard introduction to behavioral neuroscience and biological bases of action.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL848F2368C90DDC3D" target="_blank" rel="noopener noreferrer">Human Behavioral Biology (Stanford / Robert Sapolsky)</a> - A complete university video lecture series that complements textbook reading by synthesizing neurology, genetics, and evolutionary biology to explain human behavior.</p>
+<h3 id="sensation-and-perception">Sensation and Perception</h3>
+<p>Explores how sensory receptors transduce physical energy from the environment into neural signals and how the brain organizes those signals into conscious perceptual experience.</p>
+<p><a href="https://books.google.com/books?isbn=9781305580299" target="_blank" rel="noopener noreferrer">Sensation and Perception (E. Bruce Goldstein &amp; James R. Brockmole)</a> - The benchmark commercial textbook in the field, renowned for its clear explanations of psychophysics, visual pathways, and auditory processing.</p>
+<p><a href="https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/" target="_blank" rel="noopener noreferrer">Sensation And Perception (MIT OpenCourseWare / Pawan Sinha)</a> - A structured university course providing lecture notes and problem sets that can be used alongside Goldstein to study sensory processing.</p>
+<p><a href="https://nobaproject.com/modules/sensation-and-perception" target="_blank" rel="noopener noreferrer">Sensation and Perception (Noba / Randall Packard)</a> - A concise open-access reading alternative covering sensory thresholds, visual anatomy, and perceptual illusions.</p>
+<h3 id="cognitive-psychology">Cognitive Psychology</h3>
+<p>Studies mental architecture and internal representations, focusing on attention, working memory, long-term knowledge storage, language, and executive decision-making.</p>
+<p><a href="https://socialsci.libretexts.org/Bookshelves/Psychology/Cognitive_Psychology/Cognitive_Psychology_(Andrade_and_Walker)" target="_blank" rel="noopener noreferrer">Cognitive Psychology (Mehgan Andrade &amp; Neil Walker / LibreTexts)</a> - A complete open-access textbook covering the history of cognitive science, brain mechanisms, memory models, and higher-order reasoning.</p>
+<p><a href="https://books.google.com/books?isbn=9781337408271" target="_blank" rel="noopener noreferrer">Cognitive Psychology: Connecting Mind, Research, and Everyday Experience (E. Bruce Goldstein)</a> - An alternative canonical textbook that bridges experimental laboratory tasks and real-world cognitive functioning.</p>
+<p><a href="https://nobaproject.com/modules/memory-encoding-storage-retrieval" target="_blank" rel="noopener noreferrer">Memory: Encoding, Storage, Retrieval (Noba / Kathleen B. McDermott &amp; Henry L. Roediger III)</a> - A focused open-access module to read alongside either textbook for an expert breakdown of human memory systems and retrieval failures.</p>
+<h3 id="principles-of-learning-and-behavior">Principles of Learning and Behavior</h3>
+<p>Analyzes how organisms acquire new behaviors through environmental interaction, focusing on classical conditioning, operant reinforcement, extinction, and observational learning.</p>
+<p><a href="https://opentext.wsu.edu/principles-of-learning-and-behavior/" target="_blank" rel="noopener noreferrer">Principles of Learning and Behavior (Lee W. Daffin Jr. / Open Text WSU)</a> - A dedicated open textbook covering Pavlovian conditioning, operant mechanisms, schedules of reinforcement, and behavioral modification.</p>
+<p><a href="https://books.google.com/books?isbn=9780357658475" target="_blank" rel="noopener noreferrer">Introduction to Learning and Behavior (Russell A. Powell, P. Lynne Honey, &amp; Diane G. Symbaluk)</a> - An alternative comprehensive textbook emphasizing real-world behavioral analysis, habit change, and self-control.</p>
+<p><a href="https://nobaproject.com/modules/conditioning-and-learning" target="_blank" rel="noopener noreferrer">Conditioning and Learning (Noba / Mark E. Bouton)</a> - A concise open reading that outlines the foundational mechanics of instrumental and classical conditioning paradigms.</p>
+<h3 id="lifespan-developmental-psychology">Lifespan Developmental Psychology</h3>
+<p>Examines physical, cognitive, emotional, and social development across the human lifespan from prenatal stages through infancy, childhood, adolescence, and older adulthood.</p>
+<p><a href="https://open.umn.edu/opentextbooks/textbooks/540" target="_blank" rel="noopener noreferrer">Lifespan Development: A Psychological Perspective (Martha Lally &amp; Suzanne Valentine-French)</a> - A comprehensive open-access textbook surveying major developmental theories and milestones from conception to end of life.</p>
+<p><a href="https://books.google.com/books?isbn=9780134419695" target="_blank" rel="noopener noreferrer">Development Through the Lifespan (Laura E. Berk)</a> - An alternative standard textbook celebrated for its narrative depth, research synthesis, and multicultural perspective on human development.</p>
+<p><a href="https://nobaproject.com/modules/aging" target="_blank" rel="noopener noreferrer">Aging (Noba / Tara Queen &amp; Jacqui Smith)</a> - A complementary open module focusing specifically on physical, cognitive, and psychosocial trajectories in later adulthood.</p>
+<h3 id="social-psychology">Social Psychology</h3>
+<p>Investigates how individual cognition, emotion, and behavior are shaped by the presence and influence of other people, social groups, and cultural norms.</p>
+<p><a href="https://www.coursera.org/learn/social-psychology" target="_blank" rel="noopener noreferrer">Social Psychology (Wesleyan University / Scott Plous / Coursera)</a> - An interactive, free-to-audit online course exploring social perception, conformity, obedience, persuasion, and prejudice.</p>
+<p><a href="https://nobaproject.com/textbooks/together-the-science-of-social-psychology" target="_blank" rel="noopener noreferrer">Together: The Science of Social Psychology (Robert Biswas-Diener &amp; Ed Diener / Noba)</a> - A modular open-access textbook alternative or reading companion covering the major experimental areas of social psychology.</p>
+<p><a href="https://books.google.com/books?isbn=9780357122846" target="_blank" rel="noopener noreferrer">Social Psychology (Saul Kassin, Steven Fein, &amp; Hazel Rose Markus)</a> - An alternative canonical textbook with exceptional integration of empirical social science, legal applications, and cultural context.</p>
+<h3 id="personality-psychology">Personality Psychology</h3>
+<p>Analyzes individual differences in characteristic patterns of thinking, feeling, and behaving through trait, psychoanalytic, humanistic, and biological frameworks.</p>
+<p><a href="https://socialsci.libretexts.org/Bookshelves/Psychology/Culture_and_Community/Personality_Theory_in_a_Cultural_Context_(Kelland)" target="_blank" rel="noopener noreferrer">Personality Theory in a Cultural Context (Mark D. Kelland / LibreTexts)</a> - A comprehensive open textbook surveying classical psychoanalytic, neo-Freudian, humanistic, cognitive, and trait frameworks.</p>
+<p><a href="https://books.google.com/books?isbn=9781266280986" target="_blank" rel="noopener noreferrer">Personality Psychology: Domains of Knowledge About Human Nature (Randy J. Larsen &amp; David M. Buss)</a> - An alternative canonical textbook organizing personality research into dispositional, biological, and intrapsychic domains.</p>
+<p><a href="https://nobaproject.com/modules/personality-traits" target="_blank" rel="noopener noreferrer">Personality Traits (Noba / Edward Diener &amp; Richard E. Lucas)</a> - A focused open-access reading module breaking down the Five-Factor Model and the empirical measurement of trait stability.</p>
+<h3 id="abnormal-psychology-psychopathology">Abnormal Psychology (Psychopathology)</h3>
+<p>Surveys the symptoms, etiology, classification (DSM-5-TR), and evidence-based therapeutic treatments for major psychological and behavioral disorders.</p>
+<p><a href="https://opentext.wsu.edu/abnormal-psych/" target="_blank" rel="noopener noreferrer">Fundamentals of Psychological Disorders (Alexis Bridley &amp; Lee W. Daffin Jr. / Open Text WSU)</a> - A full open-access textbook detailing clinical assessment, diagnostic criteria, comorbidity, and treatment models for major mental disorders.</p>
+<p><a href="https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-clinical-psychology" target="_blank" rel="noopener noreferrer">Introduction to Clinical Psychology (University of Queensland / edX)</a> - A free-to-audit MOOC that introduces psychological disorders, clinical assessment methods, and foundational therapeutic modalities.</p>
+<p><a href="https://books.google.com/books?isbn=9781305950443" target="_blank" rel="noopener noreferrer">Abnormal Psychology: An Integrative Approach (David H. Barlow, V. Mark Durand, &amp; Stefan G. Hofmann)</a> - An alternative canonical textbook providing a multi-dimensional view of how biological, psychological, and social factors interact in psychopathology.</p>
+    </article>
+  </main>
 
 </body>
 </html>

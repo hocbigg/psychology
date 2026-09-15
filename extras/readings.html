@@ -1,144 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/psychology/style.css">
-<meta name="description" content="">
+  <title>Great Readings</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <link rel="canonical" href="https://hocbigg.github.io/psychology/extras/readings.html">
+  <meta property="og:title" content="Great Readings">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/psychology/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/psychology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/psychology/">Psychology</a>
-<a href="/psychology/advanced_topics.html">Advanced Topics</a>
-<a href="/psychology/projects.html">Projects</a>
-<a href="/psychology/extras/courses.html">Extra Courses</a>
-<a href="/psychology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/psychology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/psychology/">Psychology</a></li>
+      <li><a href="/psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/psychology/projects.html">Projects</a></li>
+      <li><a href="/psychology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/psychology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on [Field].
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<table>
+<p>A curated collection of field-defining monographs, seminal theoretical essays, and landmark empirical papers that represent milestone breakthroughs in the science and practice of Psychology.</p>
+<ul>
+<li><a href="#historical-foundations--theoretical-paradigms">Historical Foundations &amp; Theoretical Paradigms</a></li>
+<li><a href="#cognition-perception--behavioral-economics">Cognition, Perception &amp; Behavioral Economics</a></li>
+<li><a href="#clinical-psychopathology-trauma--psychotherapeutic-systems">Clinical Psychopathology, Trauma &amp; Psychotherapeutic Systems</a></li>
+<li><a href="#social-systems-obedience--interpersonal-dynamics">Social Systems, Obedience &amp; Interpersonal Dynamics</a></li>
+<li><a href="#measurement-theory-neurobiology--open-meta-science">Measurement Theory, Neurobiology &amp; Open Meta-Science</a></li>
+</ul>
+<h2 id="historical-foundations-theoretical-paradigms">Historical Foundations &amp; Theoretical Paradigms</h2>
+<p>Historical masterworks that defined psychology's core questions, methods, and foundational theoretical systems.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Title</th>
 <th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>Clinical Handbook of Psychological Disorders</em></td>
-<td>David H. Barlow (ed.)</td>
+<td><a href="https://psychclassics.yorku.ca/James/Principles/" target="_blank" rel="noopener noreferrer"><em>The Principles of Psychology</em></a></td>
+<td>William James</td>
 </tr>
 <tr>
-<td><em>Abnormal Psychology</em></td>
-<td>Barlow &amp; Durand</td>
+<td><a href="https://www.gutenberg.org/ebooks/66048" target="_blank" rel="noopener noreferrer"><em>The Interpretation of Dreams</em></a></td>
+<td>Sigmund Freud</td>
 </tr>
 <tr>
-<td><em>Developmental Psychopathology</em></td>
-<td>Dante Cicchetti (ed.)</td>
+<td><a href="https://psychclassics.yorku.ca/Watson/views.htm" target="_blank" rel="noopener noreferrer"><em>Psychology as the Behaviorist Views it</em></a></td>
+<td>John B. Watson</td>
 </tr>
 <tr>
-<td><em>Principles of Neural Science</em></td>
-<td>Kandel et al.</td>
+<td><a href="https://books.google.com/books?isbn=9780872206274" target="_blank" rel="noopener noreferrer"><em>Beyond Freedom and Dignity</em></a></td>
+<td>B. F. Skinner</td>
 </tr>
 <tr>
-<td><em>Neuroscience</em></td>
-<td>Purves et al.</td>
+<td><a href="https://books.google.com/books?isbn=9780674576292" target="_blank" rel="noopener noreferrer"><em>Mind in Society: The Development of Higher Psychological Processes</em></a></td>
+<td>Lev S. Vygotsky</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="cognition-perception-behavioral-economics">Cognition, Perception &amp; Behavioral Economics</h2>
+<p>Landmark contributions to mental architecture, cognitive heuristics, and human information processing.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://psychclassics.yorku.ca/Miller/" target="_blank" rel="noopener noreferrer"><em>The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information</em></a></td>
+<td>George A. Miller</td>
 </tr>
 <tr>
-<td><em>The Body Keeps the Score</em></td>
-<td>Bessel van der Kolk</td>
+<td><a href="https://books.google.com/books?isbn=9781848726949" target="_blank" rel="noopener noreferrer"><em>Cognitive Psychology</em></a></td>
+<td>Ulric Neisser</td>
 </tr>
 <tr>
-<td><em>Trauma and Recovery</em></td>
-<td>Judith Herman</td>
+<td><a href="https://books.google.com/books?isbn=9780521284141" target="_blank" rel="noopener noreferrer"><em>Judgment under Uncertainty: Heuristics and Biases</em></a></td>
+<td>Daniel Kahneman, Paul Slovic, &amp; Amos Tversky (Eds.)</td>
 </tr>
 <tr>
-<td><em>Cognitive Therapy: Basics and Beyond</em></td>
-<td>Judith Beck</td>
-</tr>
-<tr>
-<td><em>Learning and Behavior</em></td>
-<td>Paul Chance</td>
-</tr>
-<tr>
-<td><em>Thinking, Fast and Slow</em></td>
+<td><a href="https://books.google.com/books?isbn=9780374533557" target="_blank" rel="noopener noreferrer"><em>Thinking, Fast and Slow</em></a></td>
 <td>Daniel Kahneman</td>
 </tr>
 <tr>
-<td><em>The Man Who Mistook His Wife for a Hat</em></td>
+<td><a href="https://books.google.com/books?isbn=9780684853949" target="_blank" rel="noopener noreferrer"><em>The Man Who Mistook His Wife for a Hat</em></a></td>
 <td>Oliver Sacks</td>
 </tr>
-<tr>
-<td><em>Theories of Personality</em></td>
-<td>Feist &amp; Feist</td>
-</tr>
-<tr>
-<td><em>Handbook of Evidence-Based Practice in Clinical Psychology</em></td>
-<td>Norcross &amp; VandenBos</td>
-</tr>
-<tr>
-<td><em>The Science of Personality</em></td>
-<td>Pervin &amp; John</td>
-</tr>
 </tbody>
-</table>
-<h2 id="openfree-resources">Open/free resources</h2>
-<table>
+</table></div>
+<h2 id="clinical-psychopathology-trauma-psychotherapeutic-systems">Clinical Psychopathology, Trauma &amp; Psychotherapeutic Systems</h2>
+<p>Groundbreaking clinical formulations, attachment theories, and evidence-based therapeutic mechanisms.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Title</th>
 <th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://nobaproject.com/textbooks">NOBA Psychology Textbook</a></td>
-<td>Multiple authors</td>
+<td><a href="https://books.google.com/books?isbn=9780465061716" target="_blank" rel="noopener noreferrer"><em>Trauma and Recovery: The Aftermath of Violence—From Domestic Abuse to Political Terror</em></a></td>
+<td>Judith Lewis Herman</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://openstax.org/details/books/psychology-2e">OpenStax Psychology</a></td>
-<td>OpenStax</td>
+<td><a href="https://books.google.com/books?isbn=9780898620009" target="_blank" rel="noopener noreferrer"><em>Cognitive Therapy of Depression</em></a></td>
+<td>Aaron T. Beck, A. John Rush, Brian F. Shaw, &amp; Gary Emery</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://opentextbc.ca/socialpsychology/">Principles of Social Psychology</a></td>
-<td>BCcampus</td>
+<td><a href="https://books.google.com/books?isbn=9780465005437" target="_blank" rel="noopener noreferrer"><em>Attachment and Loss</em></a></td>
+<td>John Bowlby</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://opentext.wsu.edu/carr/">Research Methods in Psychology</a></td>
-<td>OpenStax-derived</td>
+<td><a href="https://books.google.com/books?isbn=9780143127741" target="_blank" rel="noopener noreferrer"><em>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</em></a></td>
+<td>Bessel van der Kolk</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://bio.libretexts.org/Bookshelves/Neuroscience">Introduction to Neuroscience (LibreTexts)</a></td>
-<td>LibreTexts</td>
+<td><a href="https://books.google.com/books?isbn=9780190843953" target="_blank" rel="noopener noreferrer"><em>Psychotherapy Relationships That Work</em></a></td>
+<td>John C. Norcross &amp; Michael J. Lambert (Eds.)</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="social-systems-obedience-interpersonal-dynamics">Social Systems, Obedience &amp; Interpersonal Dynamics</h2>
+<p>Crucial investigations into situational forces, social cognitive consistency, prejudice, and group compliance.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780201001792" target="_blank" rel="noopener noreferrer"><em>The Nature of Prejudice</em></a></td>
+<td>Gordon W. Allport</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780804709118" target="_blank" rel="noopener noreferrer"><em>A Theory of Cognitive Dissonance</em></a></td>
+<td>Leon Festinger</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780062803405" target="_blank" rel="noopener noreferrer"><em>Obedience to Authority: An Experimental View</em></a></td>
+<td>Stanley Milgram</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780812974447" target="_blank" rel="noopener noreferrer"><em>The Lucifer Effect: Understanding How Good People Turn Evil</em></a></td>
+<td>Philip Zimbardo</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781429233415" target="_blank" rel="noopener noreferrer"><em>The Social Animal</em></a></td>
+<td>Elliot Aronson</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="measurement-theory-neurobiology-open-meta-science">Measurement Theory, Neurobiology &amp; Open Meta-Science</h2>
+<p>Epistemological, psychometric, neural, and methodological foundations of psychological science.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://psychclassics.yorku.ca/Cronbach/construct.htm" target="_blank" rel="noopener noreferrer"><em>Construct Validity in Psychological Tests</em></a></td>
+<td>Lee J. Cronbach &amp; Paul E. Meehl</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780071810012" target="_blank" rel="noopener noreferrer"><em>Principles of Neural Science</em></a></td>
+<td>Eric R. Kandel, James H. Schwartz, Thomas M. Jessell, Steven A. Siegelbaum, &amp; A. J. Hudspeth (Eds.)</td>
+</tr>
+<tr>
+<td><a href="https://osf.io/ezcuj/" target="_blank" rel="noopener noreferrer"><em>Estimating the Reproducibility of Psychological Science</em></a></td>
+<td>Open Science Collaboration</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1371/journal.pmed.0020124" target="_blank" rel="noopener noreferrer"><em>Why Most Published Research Findings Are False</em></a></td>
+<td>John P. A. Ioannidis</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

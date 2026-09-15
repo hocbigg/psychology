@@ -1,81 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/psychology/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <link rel="canonical" href="https://hocbigg.github.io/psychology/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/psychology/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/psychology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/psychology/">Psychology</a>
-<a href="/psychology/advanced_topics.html">Advanced Topics</a>
-<a href="/psychology/projects.html">Projects</a>
-<a href="/psychology/extras/courses.html">Extra Courses</a>
-<a href="/psychology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/psychology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/psychology/">Psychology</a></li>
+      <li><a href="/psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/psychology/projects.html">Projects</a></li>
+      <li><a href="/psychology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/psychology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Psychology through hands-on, project-based practice.</p>
+<p>This directory contains step-by-step methodological walkthroughs, open-source experiment templates, and published reporting standards for learning Psychology by building tangible research artifacts.</p>
 <blockquote>
 <p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
+<p>Select a deliverable below to build hands-on methodological intuition and apply psychological theory to empirical practice.</p>
+<h2 id="project-directories">Project Directories</h2>
 <ul>
-<li><a href="#build-your-own-experiment">Psychological Experiment</a></li>
-<li><a href="#design-your-own-questionnaire">Questionnaire</a></li>
-<li><a href="#develop-your-own-scale">Psychometric Scale</a></li>
-<li><a href="#write-your-own-protocol">Research Protocol</a></li>
-<li><a href="#conduct-your-own-review">Literature Review</a></li>
+<li><a href="#build-an-interactive-behavioral-experiment">Build an Interactive Behavioral Experiment</a></li>
+<li><a href="#design-and-administer-a-survey-questionnaire">Design and Administer a Survey Questionnaire</a></li>
+<li><a href="#develop-and-validate-a-psychometric-scale">Develop and Validate a Psychometric Scale</a></li>
+<li><a href="#conduct-a-field-interview-and-thematic-analysis">Conduct a Field Interview and Thematic Analysis</a></li>
+<li><a href="#write-a-systematic-literature-review">Write a Systematic Literature Review</a></li>
+<li><a href="#write-a-clinical-case-formulation">Write a Clinical Case Formulation</a></li>
+<li><a href="#preregister-an-empirical-study-protocol">Preregister an Empirical Study Protocol</a></li>
 </ul>
-<h3 id="psychological-experiment">Psychological Experiment</h3>
+<h2 id="build-an-interactive-behavioral-experiment">Build an Interactive Behavioral Experiment</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.verywellmind.com/how-to-conduct-a-psychology-experiment-2795792">How to Conduct a Psychology Experiment</a> (Step-by-step guide)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scribbr.com/methodology/experimental-design">Guide to Experimental Design</a> (Overview with 5 steps)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://build-gravity.github.io/britt-lab">Build Your Own Psychology Experiment</a> (Coding tutorial from scratch)</li>
+<li><a href="https://osdoc.cogsci.nl/" target="_blank" rel="noopener noreferrer">OpenSesame – Step-by-Step Experiment Building Tutorial</a></li>
+<li><a href="https://kpu.pressbooks.pub/psychmethods4e/chapter/experimental-design/" target="_blank" rel="noopener noreferrer">Experimental Design (Research Methods in Psychology / Jhangiani et al.)</a></li>
+<li><a href="https://www.scribbr.com/methodology/experimental-design/" target="_blank" rel="noopener noreferrer">Scribbr – Guide to Experimental Design</a></li>
+<li><a href="https://apastyle.apa.org/jars/quantitative" target="_blank" rel="noopener noreferrer">APA Style – Journal Article Reporting Standards for Quantitative Research (JARS-Quant)</a></li>
 </ul>
-<h3 id="questionnaire">Questionnaire</h3>
+<h2 id="design-and-administer-a-survey-questionnaire">Design and Administer a Survey Questionnaire</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://psr.iq.harvard.edu/book/questionnaire-design-tip-sheet">Questionnaire Design Tip Sheet</a> (Practical tips)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://opentextbc.ca/researchmethods/chapter/constructing-survey-questionnaires">Constructing Survey Questionnaires</a> (Open textbook chapter with principles)</li>
+<li><a href="https://kpu.pressbooks.pub/psychmethods4e/chapter/constructing-surveys/" target="_blank" rel="noopener noreferrer">Constructing Surveys (Research Methods in Psychology / Jhangiani et al.)</a></li>
+<li><a href="https://psr.iq.harvard.edu/book/questionnaire-design-tip-sheet" target="_blank" rel="noopener noreferrer">Harvard University Program on Survey Research – Questionnaire Design Tip Sheet</a></li>
+<li><a href="https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/" target="_blank" rel="noopener noreferrer">Pew Research Center – Writing Survey Questions</a></li>
 </ul>
-<h3 id="psychometric-scale">Psychometric Scale</h3>
+<h2 id="develop-and-validate-a-psychometric-scale">Develop and Validate a Psychometric Scale</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6004510">Best Practices for Developing and Validating Scales</a> (9-step primer)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://ecommons.cornell.edu/server/api/core/bitstreams/f28a97d8-63bc-469e-a517-a5c141e1736a/content">Scale Construction: Developing Reliable and Valid Measurement Instruments</a> (7-step process)</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6004510/" target="_blank" rel="noopener noreferrer">Best Practices for Developing and Validating Scales for Health, Social, and Behavioral Research (Boateng et al. / PMC)</a></li>
+<li><a href="https://scholarship.sha.cornell.edu/articles/613/" target="_blank" rel="noopener noreferrer">Scale Construction: Developing Reliable and Valid Measurement Instruments (Hinkin, Tracey, &amp; Enz / Cornell)</a></li>
+<li><a href="https://kpu.pressbooks.pub/psychmethods4e/chapter/understanding-psychological-measurement/" target="_blank" rel="noopener noreferrer">Understanding Psychological Measurement (Research Methods in Psychology / Jhangiani et al.)</a></li>
 </ul>
-<h3 id="research-protocol">Research Protocol</h3>
+<h2 id="conduct-a-field-interview-and-thematic-analysis">Conduct a Field Interview and Thematic Analysis</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6172884">How to Write a Research Protocol: Tips and Tricks</a> (Step-by-step suggestions)</li>
+<li><a href="https://www.thematicanalysis.net/" target="_blank" rel="noopener noreferrer">Reflexive Thematic Analysis: Step-by-Step Practical Guides (Braun &amp; Clarke)</a></li>
+<li><a href="https://www.tandfonline.com/doi/full/10.1080/0142159X.2018.1497149" target="_blank" rel="noopener noreferrer">Twelve Tips for Conducting Qualitative Research Interviews (McGrath et al. / Taylor &amp; Francis)</a></li>
+<li><a href="https://apastyle.apa.org/jars/qualitative" target="_blank" rel="noopener noreferrer">APA Style – Journal Article Reporting Standards for Qualitative Research (JARS-Qual)</a></li>
 </ul>
-<h3 id="literature-review">Literature Review</h3>
+<h2 id="write-a-systematic-literature-review">Write a Systematic Literature Review</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://psychology.ucsd.edu/undergraduate-program/undergraduate-resources/academic-writing-resources/writing-research-papers/writing-lit-review.html">Writing a Literature Review - Psychology</a> (Step-by-step process)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=zIYC6zG265E">How to Write a Literature Review: 3 Minute Step-by-step Guide</a> (Video walkthrough)</li>
+<li><a href="https://www.prisma-statement.org/" target="_blank" rel="noopener noreferrer">PRISMA Statement – Flow Diagram and Reporting Checklist</a></li>
+<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149" target="_blank" rel="noopener noreferrer">Ten Simple Rules for Writing a Literature Review (Pautasso / PLOS Computational Biology)</a></li>
+<li><a href="https://psychology.ucsd.edu/undergraduate-program/undergraduate-resources/academic-writing-resources/writing-research-papers/writing-lit-review.html" target="_blank" rel="noopener noreferrer">UCSD Psychology – Writing a Literature Review: Step-by-Step Process</a></li>
 </ul>
-</article>
-</main>
+<h2 id="write-a-clinical-case-formulation">Write a Clinical Case Formulation</h2>
+<ul>
+<li><a href="https://www.bps.org.uk/guideline/good-practice-guidelines-use-psychological-formulation" target="_blank" rel="noopener noreferrer">Good Practice Guidelines on the Use of Psychological Formulation (British Psychological Society)</a></li>
+<li><a href="https://www.care-statement.org/checklist" target="_blank" rel="noopener noreferrer">CARE Checklist for Clinical Case Reporting (CARE Group)</a></li>
+</ul>
+<h2 id="preregister-an-empirical-study-protocol">Preregister an Empirical Study Protocol</h2>
+<ul>
+<li><a href="https://aspredicted.org/" target="_blank" rel="noopener noreferrer">AsPredicted – Preregistration Protocol and 8-Question Template</a></li>
+<li><a href="https://www.cos.io/initiatives/prereg" target="_blank" rel="noopener noreferrer">Center for Open Science – Preregistration Guide and Workflow</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6172884/" target="_blank" rel="noopener noreferrer">How to Write a Research Protocol: Tips and Tricks (Aslam &amp; Emmanuel / PMC)</a></li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>

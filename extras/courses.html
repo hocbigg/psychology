@@ -1,239 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Courses</title>
-<link rel="stylesheet" href="/psychology/style.css">
-<meta name="description" content="">
+  <title>Great Courses</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/psychology/">
+  <link rel="canonical" href="https://hocbigg.github.io/psychology/extras/courses.html">
+  <meta property="og:title" content="Great Courses">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/psychology/extras/courses.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Courses">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/psychology/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/psychology/">Psychology</a>
-<a href="/psychology/advanced_topics.html">Advanced Topics</a>
-<a href="/psychology/projects.html">Projects</a>
-<a href="/psychology/extras/courses.html">Extra Courses</a>
-<a href="/psychology/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/psychology/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/psychology/">Psychology</a></li>
+      <li><a href="/psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/psychology/projects.html">Projects</a></li>
+      <li><a href="/psychology/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/psychology/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="great-courses">Great Courses</h1>
-<p>This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.</p>
-<h2 id="foundations-of-psychology">Foundations of Psychology</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/">Introduction to Psychology (MIT OCW 9.00SC)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">6–12 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://youtube.com/playlist?list=PL-XXv-cvA_iD3pDs_C6JwQ0MXvjYxDc6H">Psychology 101 (UC Berkeley – YouTube playlist)</a></td>
-<td style="text-align: center;">29 lectures</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-13-the-human-brain-fall-2007/">Affective Neuroscience (MIT OCW 9.13)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">6–10 h/wk</td>
-</tr>
-</tbody>
-</table>
-<h2 id="neuroscience-biological-bases-of-behavior">Neuroscience &amp; Biological Bases of Behavior</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-14-brains-minds-and-machines-fall-2014/">MIT OCW – Systems Neuroscience (9.14)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">6–10 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/medical-neurobiology">Medical Neurobiology (UNC / Coursera)</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">4–6 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLqLzYkVYheZgv4aO7AJZciV06Pvx8wI35">Neuroimaging and Neuroanatomy (Oxford / YouTube)</a></td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">—</td>
-</tr>
-</tbody>
-</table>
-<h2 id="developmental-lifespan-psychology">Developmental &amp; Lifespan Psychology</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/search/?q=social+development">Social Development (MIT OCW 9.85 supplemental lectures)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/body-mind/psychology/introduction-human-development/content-section-0">Introduction to Human Development (Open University)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=R9I2S4xxwEo&amp;list=PL_lsbAsL_o2B2V8crjU4N2VXlGfJeUQzP">Adolescent Psychology (USC – YouTube series)</a></td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">—</td>
-</tr>
-</tbody>
-</table>
-<h2 id="clinical-counseling-science">Clinical &amp; Counseling Science</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/addiction-and-the-brain">Addiction and the Brain (Emory / Coursera)</a></td>
-<td style="text-align: center;">8 weeks</td>
-<td style="text-align: center;">4–8 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/treatment-of-addiction">Psychological Treatment of Addiction (Emory / Coursera)</a></td>
-<td style="text-align: center;">8 weeks</td>
-<td style="text-align: center;">4–8 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/introduction-couples-therapy">Introduction to Couples Therapy (University of Colorado / Coursera)</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">3–5 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/cbt-for-psychosis">CBT for Psychosis (King’s College London / FutureLearn)</a></td>
-<td style="text-align: center;">3 weeks</td>
-<td style="text-align: center;">4 h/wk</td>
-</tr>
-</tbody>
-</table>
-<h2 id="research-methods-statistics">Research Methods &amp; Statistics</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://oli.cmu.edu/courses/statistical-reasoning/">Statistical Reasoning (Open Learning Initiative – Carnegie Mellon)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">5–8 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://openstax.org/books/introductory-statistics/pages/1-introduction">Inferential Statistics (OpenStax Tutor / Rice University)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLhIyCjVvC4TtVvPuw2ZBxpyR6hxZuKc6v">Quantitative Methods for Psychology (YouTube – Andy Field)</a></td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">—</td>
-</tr>
-</tbody>
-</table>
-<h2 id="social-cognitive-and-affective-science">Social, Cognitive, and Affective Science</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/moralities">Moralities of Everyday Life (Yale / Coursera)</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">4–6 h/wk</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLF2D205BD88BB1916">Human Emotion (UC Berkeley – YouTube)</a></td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/9-18a-b-cognitive-neuroscience-fall-2002/">Cognitive Neuroscience (MIT OCW 9.18)</a></td>
-<td style="text-align: center;">self-paced</td>
-<td style="text-align: center;">6–10 h/wk</td>
-</tr>
-</tbody>
-</table>
-<h3 id="online-learning-great-courses">Online Learning - Great Courses</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/learning-how-to-learn">Learning How to Learn</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">2 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/mindshift">Mindshift</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">2 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/google-power-searching/google-power-searching-with-google">Powersearching with Google</a></td>
-<td style="text-align: center;">3 weeks</td>
-<td style="text-align: center;">4-6 hours/week</td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<p>A curated directory of standout university lecture series, full-length OpenCourseWare offerings, and high-impact online courses in Psychology that build deep intuition and advanced domain knowledge.</p>
+<ul>
+<li><a href="#behavioral-neuroscience--neural-systems">Behavioral Neuroscience &amp; Neural Systems</a></li>
+<li><a href="#cognitive-systems-perception--decision-making">Cognitive Systems, Perception &amp; Decision Making</a></li>
+<li><a href="#social-moral--affective-psychology">Social, Moral &amp; Affective Psychology</a></li>
+<li><a href="#child-development--behavioral-interventions">Child Development &amp; Behavioral Interventions</a></li>
+<li><a href="#clinical-science-psychopathology--evidence-based-treatments">Clinical Science, Psychopathology &amp; Evidence-Based Treatments</a></li>
+<li><a href="#quantitative-methods-open-science--modeling">Quantitative Methods, Open Science &amp; Modeling</a></li>
+</ul>
+<h2 id="behavioral-neuroscience-neural-systems">Behavioral Neuroscience &amp; Neural Systems</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL848F2368C90DDC3D" target="_blank" rel="noopener noreferrer">Human Behavioral Biology (Stanford University / Prof. Robert Sapolsky)</a></li>
+<li><a href="https://www.coursera.org/learn/medical-neuroscience" target="_blank" rel="noopener noreferrer">Medical Neuroscience (Coursera / Duke University / Prof. Leonard E. White)</a></li>
+<li><a href="https://www.coursera.org/learn/synapses" target="_blank" rel="noopener noreferrer">Synapses, Neurons and Brains (Coursera / Hebrew University of Jerusalem / Prof. Idan Segev)</a></li>
+</ul>
+<h2 id="cognitive-systems-perception-decision-making">Cognitive Systems, Perception &amp; Decision Making</h2>
+<ul>
+<li><a href="https://ocw.mit.edu/courses/9-13-the-human-brain-spring-2019/" target="_blank" rel="noopener noreferrer">9.13 The Human Brain (MIT OpenCourseWare / Prof. Nancy Kanwisher)</a></li>
+<li><a href="https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/" target="_blank" rel="noopener noreferrer">9.35 Sensation And Perception (MIT OpenCourseWare / Prof. Pawan Sinha)</a></li>
+<li><a href="https://www.edx.org/course/behavioural-economics-in-action" target="_blank" rel="noopener noreferrer">BE101x: Behavioural Economics in Action (edX / University of Toronto / Prof. Dilip Soman)</a></li>
+</ul>
+<h2 id="social-moral-affective-psychology">Social, Moral &amp; Affective Psychology</h2>
+<ul>
+<li><a href="https://www.coursera.org/learn/social-psychology" target="_blank" rel="noopener noreferrer">Social Psychology (Coursera / Wesleyan University / Prof. Scott Plous)</a></li>
+<li><a href="https://www.coursera.org/learn/moralities" target="_blank" rel="noopener noreferrer">Moralities of Everyday Life (Coursera / Yale University / Prof. Paul Bloom)</a></li>
+<li><a href="https://www.coursera.org/learn/positive-psychology" target="_blank" rel="noopener noreferrer">Positive Psychology (Coursera / UNC Chapel Hill / Prof. Barbara L. Fredrickson)</a></li>
+</ul>
+<h2 id="child-development-behavioral-interventions">Child Development &amp; Behavioral Interventions</h2>
+<ul>
+<li><a href="https://www.coursera.org/learn/everyday-parenting" target="_blank" rel="noopener noreferrer">Everyday Parenting: The ABCs of Child Rearing (Coursera / Yale University / Prof. Alan E. Kazdin)</a></li>
+<li><a href="https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-developmental-psychology" target="_blank" rel="noopener noreferrer">Introduction to Developmental Psychology (edX / The University of Queensland / Prof. Virginia Slaughter et al.)</a></li>
+</ul>
+<h2 id="clinical-science-psychopathology-evidence-based-treatments">Clinical Science, Psychopathology &amp; Evidence-Based Treatments</h2>
+<ul>
+<li><a href="https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-clinical-psychology" target="_blank" rel="noopener noreferrer">Introduction to Clinical Psychology (edX / The University of Queensland / Prof. Blake McKimmie)</a></li>
+<li><a href="https://www.coursera.org/learn/psychological-first-aid" target="_blank" rel="noopener noreferrer">Psychological First Aid (Coursera / Johns Hopkins University / Prof. George S. Everly, Jr.)</a></li>
+<li><a href="https://www.coursera.org/learn/addiction-and-the-brain" target="_blank" rel="noopener noreferrer">The Addicted Brain (Coursera / Emory University / Prof. Michael J. Kuhar)</a></li>
+</ul>
+<h2 id="quantitative-methods-open-science-modeling">Quantitative Methods, Open Science &amp; Modeling</h2>
+<ul>
+<li><a href="https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-psychological-research-methods" target="_blank" rel="noopener noreferrer">Introduction to Psychological Research Methods (edX / The University of Queensland / Prof. Blake McKimmie)</a></li>
+<li><a href="https://www.coursera.org/learn/statistical-inferences" target="_blank" rel="noopener noreferrer">Improving Your Statistical Inferences (Coursera / Eindhoven University of Technology / Prof. Daniel Lakens)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN" target="_blank" rel="noopener noreferrer">Statistical Rethinking (YouTube / Max Planck Institute / Prof. Richard McElreath)</a></li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>
