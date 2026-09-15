@@ -1,64 +1,45 @@
 # Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+A curated directory of standout university lecture series, full-length OpenCourseWare offerings, and high-impact online courses in Psychology that build deep intuition and advanced domain knowledge.
 
+- [Behavioral Neuroscience & Neural Systems](#behavioral-neuroscience--neural-systems)
+- [Cognitive Systems, Perception & Decision Making](#cognitive-systems-perception--decision-making)
+- [Social, Moral & Affective Psychology](#social-moral--affective-psychology)
+- [Child Development & Behavioral Interventions](#child-development--behavioral-interventions)
+- [Clinical Science, Psychopathology & Evidence-Based Treatments](#clinical-science-psychopathology--evidence-based-treatments)
+- [Quantitative Methods, Open Science & Modeling](#quantitative-methods-open-science--modeling)
 
-## Foundations of Psychology
+## Behavioral Neuroscience & Neural Systems
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: | 
-| [Introduction to Psychology (MIT OCW 9.00SC)](https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/) | self-paced | 6–12 h/wk |
-| [Psychology 101 (UC Berkeley – YouTube playlist)](https://youtube.com/playlist?list=PL-XXv-cvA_iD3pDs_C6JwQ0MXvjYxDc6H) | 29 lectures | — |
+- [Human Behavioral Biology (Stanford University / Prof. Robert Sapolsky)](https://www.youtube.com/playlist?list=PL848F2368C90DDC3D)
+- [Medical Neuroscience (Coursera / Duke University / Prof. Leonard E. White)](https://www.coursera.org/learn/medical-neuroscience)
+- [Synapses, Neurons and Brains (Coursera / Hebrew University of Jerusalem / Prof. Idan Segev)](https://www.coursera.org/learn/synapses)
 
+## Cognitive Systems, Perception & Decision Making
 
-## Neuroscience & Biological Bases of Behavior
+- [9.13 The Human Brain (MIT OpenCourseWare / Prof. Nancy Kanwisher)](https://ocw.mit.edu/courses/9-13-the-human-brain-spring-2019/)
+- [9.35 Sensation And Perception (MIT OpenCourseWare / Prof. Pawan Sinha)](https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/)
+- [BE101x: Behavioural Economics in Action (edX / University of Toronto / Prof. Dilip Soman)](https://www.edx.org/course/behavioural-economics-in-action)
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Medical Neurobiology (UNC / Coursera)](https://www.coursera.org/learn/medical-neurobiology) | 6 weeks | 4–6 h/wk |
-| [Neuroimaging and Neuroanatomy (Oxford / YouTube)](https://www.youtube.com/playlist?list=PLqLzYkVYheZgv4aO7AJZciV06Pvx8wI35) | — | — |
+## Social, Moral & Affective Psychology
 
+- [Social Psychology (Coursera / Wesleyan University / Prof. Scott Plous)](https://www.coursera.org/learn/social-psychology)
+- [Moralities of Everyday Life (Coursera / Yale University / Prof. Paul Bloom)](https://www.coursera.org/learn/moralities)
+- [Positive Psychology (Coursera / UNC Chapel Hill / Prof. Barbara L. Fredrickson)](https://www.coursera.org/learn/positive-psychology)
 
-## Developmental & Lifespan Psychology
+## Child Development & Behavioral Interventions
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Social Development (MIT OCW 9.85 supplemental lectures)](https://ocw.mit.edu/search/?q=social+development) | self-paced | — |
-| [Introduction to Human Development (Open University)](https://www.open.edu/openlearn/body-mind/psychology/introduction-human-development/content-section-0) | self-paced | — |
-| [Adolescent Psychology (USC – YouTube series)](https://www.youtube.com/watch?v=R9I2S4xxwEo&list=PL_lsbAsL_o2B2V8crjU4N2VXlGfJeUQzP) | — | — |
+- [Everyday Parenting: The ABCs of Child Rearing (Coursera / Yale University / Prof. Alan E. Kazdin)](https://www.coursera.org/learn/everyday-parenting)
+- [Introduction to Developmental Psychology (edX / The University of Queensland / Prof. Virginia Slaughter et al.)](https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-developmental-psychology)
 
+## Clinical Science, Psychopathology & Evidence-Based Treatments
 
-## Clinical & Counseling Science
+- [Introduction to Clinical Psychology (edX / The University of Queensland / Prof. Blake McKimmie)](https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-clinical-psychology)
+- [Psychological First Aid (Coursera / Johns Hopkins University / Prof. George S. Everly, Jr.)](https://www.coursera.org/learn/psychological-first-aid)
+- [The Addicted Brain (Coursera / Emory University / Prof. Michael J. Kuhar)](https://www.coursera.org/learn/addiction-and-the-brain)
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Addiction and the Brain (Emory / Coursera)](https://www.coursera.org/learn/addiction-and-the-brain) | 8 weeks | 4–8 h/wk |
-| [Psychological Treatment of Addiction (Emory / Coursera)](https://www.coursera.org/learn/treatment-of-addiction) | 8 weeks | 4–8 h/wk |
-| [Introduction to Couples Therapy (University of Colorado / Coursera)](https://www.coursera.org/learn/introduction-couples-therapy) | 6 weeks | 3–5 h/wk |
-| [CBT for Psychosis (King’s College London / FutureLearn)](https://www.futurelearn.com/courses/cbt-for-psychosis) | 3 weeks | 4 h/wk |
+## Quantitative Methods, Open Science & Modeling
 
-
-## Research Methods & Statistics
-
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Statistical Reasoning (Open Learning Initiative – Carnegie Mellon)](https://oli.cmu.edu/courses/statistical-reasoning/) | self-paced | 5–8 h/wk |
-| [Inferential Statistics (OpenStax Tutor / Rice University)](https://openstax.org/books/introductory-statistics/pages/1-introduction) | self-paced | — |
-| [Quantitative Methods for Psychology (YouTube – Andy Field)](https://www.youtube.com/playlist?list=PLhIyCjVvC4TtVvPuw2ZBxpyR6hxZuKc6v) | — | — |
-
-## Social, Cognitive, and Affective Science
-
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Moralities of Everyday Life (Yale / Coursera)](https://www.coursera.org/learn/moralities) | 6 weeks | 4–6 h/wk |
-| [Human Emotion (UC Berkeley – YouTube)](https://www.youtube.com/playlist?list=PLF2D205BD88BB1916) | — | — |
-
-### Online Learning - Great Courses
-
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week |
-| [Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week |
-| [Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week |
+- [Introduction to Psychological Research Methods (edX / The University of Queensland / Prof. Blake McKimmie)](https://www.edx.org/learn/psychology/the-university-of-queensland-introduction-to-psychological-research-methods)
+- [Improving Your Statistical Inferences (Coursera / Eindhoven University of Technology / Prof. Daniel Lakens)](https://www.coursera.org/learn/statistical-inferences)
+- [Statistical Rethinking (YouTube / Max Planck Institute / Prof. Richard McElreath)](https://www.youtube.com/playlist?list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN)
