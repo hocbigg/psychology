@@ -21,7 +21,7 @@ This curriculum focuses strictly on the universal core: the shared body of theor
 
 Once you have built this foundational base, you can branch out into specialized subfields in [Advanced Topics](advanced_topics.md), build tangible research artifacts in [Projects](projects.md), study field-shaping monographs and seminal papers in [Readings](extras/readings.md), or explore extended university lecture series in [Courses](extras/courses.md).
 
-## Communities
+### Communities
 
 - Forums:
     - [Student Doctor Network - Psychology](https://forums.studentdoctor.net/forums/psychology-psy-d-ph-d.57/)

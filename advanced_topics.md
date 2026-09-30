@@ -2,11 +2,11 @@
 
 The following tracks branch out from foundational psychology into specialized subfields, advanced computational paradigms, and practical applications. Learners should select one or two tracks aligned with their research interests or professional objectives rather than attempting to complete every specialization.
 
-- [Cognitive Neuroscience & Neuropsychology](#cognitive-neuroscience--neuropsychology): Investigation of neural architecture, functional localization, electrophysiology, and the behavioral consequences of focal brain lesions.
-- [Computational Cognitive Science & Behavioral Modeling](#computational-cognitive-science--behavioral-modeling): Algorithmic, Bayesian, and biologically plausible neural modeling of learning, memory, and decision dynamics.
-- [Clinical Science, Evidence-Based Psychotherapy & Nosology](#clinical-science-evidence-based-psychotherapy--nosology): Empirical psychotherapeutic interventions, transdiagnostic treatment protocols, neurochemical mechanisms, and psychological assessment.
-- [Applied Social, Organizational & Behavioral Economics](#applied-social-organizational--behavioral-economics): Translation of cognitive biases, social influence, and choice architecture into institutional design, workplace systems, and policy.
-- [Advanced Quantitative Methods, Psychometrics & Meta-Science](#advanced-quantitative-methods-psychometrics--meta-science): Latent variable structures, modern test theory, hierarchical Bayesian estimation, and the replication crisis.
+- [Cognitive Neuroscience & Neuropsychology](#cognitive-neuroscience-neuropsychology): Investigation of neural architecture, functional localization, electrophysiology, and the behavioral consequences of focal brain lesions.
+- [Computational Cognitive Science & Behavioral Modeling](#computational-cognitive-science-behavioral-modeling): Algorithmic, Bayesian, and biologically plausible neural modeling of learning, memory, and decision dynamics.
+- [Clinical Science, Evidence-Based Psychotherapy & Nosology](#clinical-science-evidence-based-psychotherapy-nosology): Empirical psychotherapeutic interventions, transdiagnostic treatment protocols, neurochemical mechanisms, and psychological assessment.
+- [Applied Social, Organizational & Behavioral Economics](#applied-social-organizational-behavioral-economics): Translation of cognitive biases, social influence, and choice architecture into institutional design, workplace systems, and policy.
+- [Advanced Quantitative Methods, Psychometrics & Meta-Science](#advanced-quantitative-methods-psychometrics-meta-science): Latent variable structures, modern test theory, hierarchical Bayesian estimation, and the replication crisis.
 
 ## Cognitive Neuroscience & Neuropsychology
 

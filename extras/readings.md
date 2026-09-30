@@ -2,11 +2,11 @@
 
 A curated collection of field-defining monographs, seminal theoretical essays, and landmark empirical papers that represent milestone breakthroughs in the science and practice of Psychology.
 
-- [Historical Foundations & Theoretical Paradigms](#historical-foundations--theoretical-paradigms)
-- [Cognition, Perception & Behavioral Economics](#cognition-perception--behavioral-economics)
-- [Clinical Psychopathology, Trauma & Psychotherapeutic Systems](#clinical-psychopathology-trauma--psychotherapeutic-systems)
-- [Social Systems, Obedience & Interpersonal Dynamics](#social-systems-obedience--interpersonal-dynamics)
-- [Measurement Theory, Neurobiology & Open Meta-Science](#measurement-theory-neurobiology--open-meta-science)
+- [Historical Foundations & Theoretical Paradigms](#historical-foundations-theoretical-paradigms)
+- [Cognition, Perception & Behavioral Economics](#cognition-perception-behavioral-economics)
+- [Clinical Psychopathology, Trauma & Psychotherapeutic Systems](#clinical-psychopathology-trauma-psychotherapeutic-systems)
+- [Social Systems, Obedience & Interpersonal Dynamics](#social-systems-obedience-interpersonal-dynamics)
+- [Measurement Theory, Neurobiology & Open Meta-Science](#measurement-theory-neurobiology-open-meta-science)
 
 ## Historical Foundations & Theoretical Paradigms
 

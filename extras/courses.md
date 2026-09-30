@@ -2,12 +2,12 @@
 
 A curated directory of standout university lecture series, full-length OpenCourseWare offerings, and high-impact online courses in Psychology that build deep intuition and advanced domain knowledge.
 
-- [Behavioral Neuroscience & Neural Systems](#behavioral-neuroscience--neural-systems)
-- [Cognitive Systems, Perception & Decision Making](#cognitive-systems-perception--decision-making)
-- [Social, Moral & Affective Psychology](#social-moral--affective-psychology)
-- [Child Development & Behavioral Interventions](#child-development--behavioral-interventions)
-- [Clinical Science, Psychopathology & Evidence-Based Treatments](#clinical-science-psychopathology--evidence-based-treatments)
-- [Quantitative Methods, Open Science & Modeling](#quantitative-methods-open-science--modeling)
+- [Behavioral Neuroscience & Neural Systems](#behavioral-neuroscience-neural-systems)
+- [Cognitive Systems, Perception & Decision Making](#cognitive-systems-perception-decision-making)
+- [Social, Moral & Affective Psychology](#social-moral-affective-psychology)
+- [Child Development & Behavioral Interventions](#child-development-behavioral-interventions)
+- [Clinical Science, Psychopathology & Evidence-Based Treatments](#clinical-science-psychopathology-evidence-based-treatments)
+- [Quantitative Methods, Open Science & Modeling](#quantitative-methods-open-science-modeling)
 
 ## Behavioral Neuroscience & Neural Systems
 
