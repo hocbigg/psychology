@@ -52,7 +52,7 @@ Surveys the scientific study of the human mind and behavior, introducing foundat
 
 [Psychology 2e (OpenStax)](https://openstax.org/details/books/psychology-2e) - A comprehensive, peer-reviewed open textbook covering core terminology, foundational theories, and major subfields of the discipline.
 
-[PSYC 110: Introduction to Psychology (Open Yale Courses / Paul Bloom)](https://oyc.yale.edu/psychology/psyc-110) - A video lecture alternative or companion to OpenStax, offering an engaging overview of foundational psychological debates and landmark experiments.
+[PSYC 110: Introduction to Psychology (Open Yale Courses / Paul Bloom)](https://oyc.yale.edu/introduction-psychology/psyc-110) - A video lecture alternative or companion to OpenStax, offering an engaging overview of foundational psychological debates and landmark experiments.
 
 ### Research Methods and Statistics in Psychology
 
